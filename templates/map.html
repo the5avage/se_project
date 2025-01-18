@@ -1,11 +1,189 @@
 {% extends 'base.html' %}
 {% block content %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.choropleth/dist/choropleth.js"></script>
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script> <!-- Include Turf.js -->
 <h1>Map</h1>
 <div id="map" style="height: 500px;"></div>
 <script>
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    // Initialize the map
+    var map = L.map('map').setView([52.5200, 13.4050], 10);  // Centered on Berlin
+
+    // Add the base tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19
     }).addTo(map);
+
+    // Parse the GeoJSON data passed from Flask
+    var geojsonData = {{ geojson | tojson | safe }};
+    console.log('GeoJSON Data:', geojsonData);  // Debugging
+
+    // Use the charging station data passed from Flask
+    var chargingStations = {{ charging_stations | tojson | safe }};
+    console.log('Charging Stations:', chargingStations);  // Debugging
+
+    // Function to get a heatmap color based on count
+    function getHeatmapColor(count) {
+        // Define a gradient of colors from light to dark
+        const colors = [
+    '#FFEFD5', '#FFDAB9', '#FFC0CB', '#FFA07A', '#FF7F7F', '#FF6347', '#FF4500', '#FF0000'
+];
+
+
+
+        // Map the count to a color index
+        if (count > 100) return colors[7];
+        if (count > 50) return colors[6];
+        if (count > 20) return colors[5];
+        if (count > 10) return colors[4];
+        if (count > 5) return colors[3];
+        if (count > 2) return colors[2];
+        if (count > 0) return colors[1];
+        return colors[0];  // Default color for 0
+    }
+
+    // Add the GeoJSON layer to the map
+    var geojsonLayer = L.geoJSON(geojsonData, {
+        style: function (feature) {
+            return {
+                fillColor: getHeatmapColor(feature.properties.count),  // Heatmap color
+                weight: 2,  // Border thickness
+                opacity: 1,  // Border opacity
+                color: 'black',  // Border color
+                fillOpacity: 0.7  // Fill opacity
+            };
+        },
+        onEachFeature: function (feature, layer) {
+            // Bind a popup with Ort, PLZ, and count (on click)
+            layer.bindPopup(
+                'Ort: ' + feature.properties.Ort + '<br>' +
+                'PLZ: ' + feature.properties.PLZ + '<br>' +
+                'Charging Stations: ' + feature.properties.count
+            );
+
+            // Bind a tooltip with Ort, PLZ, and count (on hover)
+            var tooltip = L.tooltip({
+                permanent: false,  // Show tooltip only on hover
+                direction: 'top',  // Position the tooltip above the polygon
+                sticky: false      // Ensure the tooltip disappears when not hovering
+            }).setContent(
+                'Ort: ' + feature.properties.Ort + '<br>' +
+                'PLZ: ' + feature.properties.PLZ + '<br>' +
+                'Charging Stations: ' + feature.properties.count
+            );
+
+            layer.bindTooltip(tooltip);
+
+            // Zoom to the polygon when clicked
+            layer.on('click', function (e) {
+                var bounds = e.target.getBounds();
+                if (bounds && bounds.isValid()) {
+                    map.fitBounds(bounds);  // Zoom to the bounds of the clicked polygon
+
+                    // Show charging stations only if the polygon's Ort is "Berlin"
+                    if (feature.properties.Ort === "Berlin") {
+                        showChargingStationsInPolygon(e.target, bounds);
+                    } else {
+                        // Remove charging stations if the polygon's Ort is not "Berlin"
+                        if (window.chargingStationLayer) {
+                            map.removeLayer(window.chargingStationLayer);
+                        }
+                    }
+                } else {
+                    console.error('Invalid bounds:', bounds);
+                }
+            });
+        }
+    }).addTo(map);
+
+    // Add a gradient rectangle legend
+    var legend = L.control({ position: 'bottomright' });
+legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend');
+    var grades = [0, 100];  // Lowest and highest values
+    var colors = [
+        '#FFEFD5', '#FF0000'  // Lightest and darkest colors
+    ];
+
+    // Set the legend style
+    div.style.background = 'linear-gradient(to right, ' + colors.join(', ') + ')';
+    div.style.padding = '10px';
+    div.style.borderRadius = '5px';
+    div.style.color = '#000';
+    div.style.textAlign = 'center';
+    div.style.width = '200px';  // Set a fixed width for the legend
+    div.style.position = 'relative';
+
+    // Add labels to the legend
+    var minLabel = L.DomUtil.create('div', '', div);
+    minLabel.style.position = 'absolute';
+    minLabel.style.left = '0';
+    minLabel.style.bottom = '-20px';
+    minLabel.style.color = '#000';
+    minLabel.innerHTML = grades[0];
+
+    var maxLabel = L.DomUtil.create('div', '', div);
+    maxLabel.style.position = 'absolute';
+    maxLabel.style.right = '0';
+    maxLabel.style.bottom = '-20px';
+    maxLabel.style.color = '#000';
+    maxLabel.innerHTML = grades[1];
+
+    return div;
+};
+legend.addTo(map);
+
+
+    // Function to show charging stations within a polygon
+    function showChargingStationsInPolygon(polygonLayer, bounds) {
+        // Clear existing charging station markers
+        if (window.chargingStationLayer) {
+            map.removeLayer(window.chargingStationLayer);
+        }
+
+        // Convert the Leaflet polygon layer to a GeoJSON feature
+        var polygonFeature = polygonLayer.toGeoJSON();
+
+        // Filter charging stations within the polygon
+        var filteredStations = chargingStations.filter(function (station) {
+            // Check if station coordinates are valid
+            if (isNaN(station.Latitude) || isNaN(station.Longitude)) {
+                console.warn('Invalid station coordinates:', station);
+                return false;
+            }
+
+            // Create a Turf point for the charging station
+            var point = turf.point([station.Longitude, station.Latitude]);
+
+            // Check if the point is inside the polygon
+            return turf.booleanPointInPolygon(point, polygonFeature);
+        });
+
+        // Add markers for the filtered charging stations
+        window.chargingStationLayer = L.layerGroup(
+            filteredStations.map(function (station) {
+                var marker = L.marker([station.Latitude, station.Longitude]);
+
+                // Bind a popup with station name and address (on click)
+                marker.bindPopup(
+                    '<b>' + station.Name + '</b><br>' +
+                    station.Address
+                );
+
+                // // Bind a tooltip with station name (on hover)
+                // marker.bindTooltip(
+                //     station.Name,
+                //     {
+                //         permanent: false,  // Show tooltip only on hover
+                //         direction: 'top',  // Position the tooltip above the marker
+                //         sticky: false      // Ensure the tooltip disappears when not hovering
+                //     }
+                // );
+
+                return marker;
+            })
+        ).addTo(map);
+    }
 </script>
 {% endblock %}
