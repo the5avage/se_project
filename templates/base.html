@@ -40,29 +40,31 @@
         </div>
 
         <!-- Selected Station Info -->
-        <div id="selected-station-info" style="margin-top: 20px;">
-            <h3>Selected Station</h3>
-            <p id="station-name">No station selected</p>
-            <p id="station-rating">Rating: N/A</p>
-        </div>
+       <!-- Selected Station Info -->
+<div id="selected-station-info" style="margin-top: 20px;">
+    <h3>Selected Station</h3>
+    <p id="station-company">No station selected</p>
+    <p id="station-name">No station selected</p>  <!-- Ensure this ID exists -->
+    <p id="station-rating">Rating: N/A</p>       <!-- Ensure this ID exists -->
+</div>
 
-        <!-- Review GUI -->
-        <div id="review-section" style="margin-top: 20px;">
-            <h3>Leave a Review</h3>
-            <form 
-                id="review-form" 
-                hx-post="{{ url_for('add_review') }}" 
-                hx-target="#feedback" 
-                hx-swap="innerHTML"
-            >
-                <input type="hidden" id="station-id" name="station_id">
-                <label for="rating">Rating (0-5):</label>
-                <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" required>
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment"></textarea>
-                <button type="submit">Submit Review</button>
-            </form>
-        </div>
+<!-- Review GUI -->
+<div id="review-section" style="margin-top: 20px;">
+    <h3>Leave a Review</h3>
+    <form 
+        id="review-form" 
+        hx-post="{{ url_for('add_review') }}" 
+        hx-target="#feedback" 
+        hx-swap="innerHTML"
+    >
+        <input type="hidden" id="station-id" name="station_id">  <!-- Ensure this ID exists -->
+        <label for="rating">Rating (0-5):</label>
+        <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" required>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment"></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+</div>
     </div>
 </body>
 </html>

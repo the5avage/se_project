@@ -6,8 +6,9 @@
 {% endfor %}
 
 <script>
-    function selectStation(stationId) {
-    // Fetch station details from the backend
+ function selectStation(stationId) {
+    console.log("Selected Station ID:", stationId);  // Debug log
+
     fetch(`/station_info/${stationId}`)
         .then(response => {
             if (!response.ok) {
@@ -16,11 +17,26 @@
             return response.json();
         })
         .then(data => {
-            // Update the DOM with the station details
-            document.getElementById('station-name').innerText = data.Name;
-            document.getElementById('station-address').innerText = 'Address: ' + data.Address;
-            document.getElementById('station-rating').innerText = 'Rating: ' + (data.Rating || 'N/A');
-            document.getElementById('station-id').value = data.id;
+            console.log("Station Data:", data);  // Debug log
+
+            // Check if elements exist
+            const stationNameElement = document.getElementById('station-name');
+            const stationCompanyElement = document.getElementById('station-company');
+            const stationRatingElement = document.getElementById('station-rating');
+            const stationIdElement = document.getElementById('station-id');
+
+            if (!stationNameElement || !stationCompanyElement || !stationRatingElement || !stationIdElement) {
+                throw new Error('One or more elements not found in the DOM');
+            }
+
+            // Update the elements
+            stationCompanyElement.innerText = "Charging Station Company: " + data.Name;
+            stationNameElement.innerText = "Station Address: " + data.Address;  // Fix: Use data.Address
+            stationRatingElement.innerText = 'Rating: ' + (data.Rating || 'N/A');
+            stationIdElement.value = data.id;
+
+            // Clear the search results dropdown
+            document.getElementById('search-results').innerHTML = '';
         })
         .catch(error => {
             console.error('Error:', error);

@@ -51,7 +51,7 @@
         },
         onEachFeature: function (feature, layer) {
             layer.bindPopup(
-                'Ort: ' + feature.properties.Ort + '<br>' +
+                'District: ' + feature.properties.Ort + '<br>' +  // Display district name
                 'PLZ: ' + feature.properties.PLZ + '<br>' +
                 'Charging Stations: ' + feature.properties.count
             );
@@ -61,7 +61,7 @@
                 direction: 'top',
                 sticky: false
             }).setContent(
-                'Ort: ' + feature.properties.Ort + '<br>' +
+                'District: ' + feature.properties.Ort + '<br>' +  // Display district name
                 'PLZ: ' + feature.properties.PLZ + '<br>' +
                 'Charging Stations: ' + feature.properties.count
             );
@@ -72,13 +72,7 @@
                 var bounds = e.target.getBounds();
                 if (bounds && bounds.isValid()) {
                     map.fitBounds(bounds);
-                    if (feature.properties.Ort === "Berlin") {
-                        showChargingStationsInPolygon(e.target, bounds);
-                    } else {
-                        if (window.chargingStationLayer) {
-                            map.removeLayer(window.chargingStationLayer);
-                        }
-                    }
+                    showChargingStationsInPolygon(e.target, bounds);  // Always show stations
                 } else {
                     console.error('Invalid bounds:', bounds);
                 }
@@ -120,15 +114,25 @@
         if (window.chargingStationLayer) {
             map.removeLayer(window.chargingStationLayer);
         }
+
+        // Convert the polygon layer to GeoJSON
         var polygonFeature = polygonLayer.toGeoJSON();
+
+        // Filter stations within the polygon
         var filteredStations = chargingStations.filter(function (station) {
             if (isNaN(station.Latitude) || isNaN(station.Longitude)) {
                 console.warn('Invalid station coordinates:', station);
                 return false;
             }
+
+            // Create a Turf point for the station
             var point = turf.point([station.Longitude, station.Latitude]);
+
+            // Check if the point is inside the polygon
             return turf.booleanPointInPolygon(point, polygonFeature);
         });
+
+        // Add markers for the filtered stations
         window.chargingStationLayer = L.layerGroup(
             filteredStations.map(function (station) {
                 var marker = L.marker([station.Latitude, station.Longitude]);
@@ -138,7 +142,8 @@
                 );
                 marker.on('click', function () {
                     // Update selected station info
-                    document.getElementById('station-name').innerText = station.Address;
+                    document.getElementById('station-company').innerText = "Charging Station Company: " + station.Name;
+                    document.getElementById('station-name').innerText = "Station Address: " + station.Address;
                     document.getElementById('station-rating').innerText = 'Rating: ' + (station.Rating || 'N/A');
                     document.getElementById('station-id').value = station.id;  // Set station ID for review form
                 });

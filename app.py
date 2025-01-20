@@ -49,11 +49,12 @@ def home():
     global charging_stations  # Use the global variable
 
     # Load the GeoJSON data
-    with open('output.geojson', 'r') as f:
+    with open('updated_output.geojson', 'r') as f:
         geojson = json.load(f)
 
     # Load the charging station dataset
     df_lstat = pd.read_excel("datasets/Ladesaeulenregister_SEP.xlsx", header=10)
+    df_postcode = pd.read_csv("datasets/Postcode_BerlinDistricts.csv")
 
     # Normalize the 'Ort' column and filter for Berlin
     df_lstat['Ort'] = df_lstat['Ort'].str.strip().str.lower()
@@ -87,16 +88,27 @@ def home():
 
     # Assign unique IDs to each station
     charging_stations['id'] = range(1, len(charging_stations) + 1)
+    charging_stations['Name'] = charging_stations['Name'].fillna("No Company Listed")
+    charging_stations['PLZ'] = charging_stations['PLZ'].astype(str).str.zfill(5)
+
+    df_postcode = df_postcode.rename(columns={
+    'Postcode': 'PLZ'
+    })
+    df_postcode['PLZ'] = df_postcode['PLZ'].astype(str).str.zfill(5)
+    merged_df = charging_stations.merge(df_postcode, on='PLZ', how='inner')
+    merged_df['Ort'] = merged_df['District']
+    merged_df.drop('District', axis=1, inplace=True)
+
 
     # Convert to a list of dictionaries
-    charging_stations = charging_stations[['id', 'Name', 'Address', 'Latitude', 'Longitude', 'PLZ']].to_dict('records')
+    charging_stations = merged_df[['id', 'Name', 'Address','Ort', 'Latitude', 'Longitude', 'PLZ']].to_dict('records')
 
     # Pass both GeoJSON and charging station data to the template
     return render_template('map.html', geojson=geojson, charging_stations=charging_stations)
 
 @app.route('/map')
 def map_view():
-    with open('output.geojson', 'r') as f:
+    with open('updated_output.geojson', 'r') as f:
         geojson = json.load(f)
     return render_template('map.html', geojson=geojson)
 
