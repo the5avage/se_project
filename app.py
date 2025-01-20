@@ -77,7 +77,7 @@ def home():
 
     # Combine "Straße" and "Hausnummer" into a single address string
     charging_stations['Address'] = charging_stations['Straße'] + ' ' + charging_stations['Hausnummer'].astype(str)
-
+    charging_stations['id'] = range(1, len(charging_stations) + 1)
     # Rename columns to match expected keys
     charging_stations = charging_stations.rename(columns={
         'Anzeigename (Karte)': 'Name',
@@ -145,9 +145,19 @@ def logout():
 
 @app.route('/search_charging_station', methods=['POST'])
 def search_charging_station():
-    query = request.form.get('query', '').lower()
-    results = [station for station in charging_stations if query in station['Address'].lower()]
-    return render_template('search_results.html', results=results)
+    query = request.form.get('query', '').lower()  # Get the search query and convert to lowercase
+    results = [station for station in charging_stations if query in station['Address'].lower()]  # Filter stations
+    return render_template('search_results.html', results=results)  # Render the results
+
+@app.route('/station_info/<int:station_id>', methods=['GET'])
+def station_info(station_id):
+    # Find the station with the given ID
+    station = next((s for s in charging_stations if s['id'] == station_id), None)
+    
+    if station:
+        return jsonify(station)  # Return the station data as JSON
+    else:
+        return jsonify({"error": "Station not found"}), 404  # Return an error if the station is not found
 
 @app.route('/add_review', methods=['POST'])
 def add_review():
@@ -168,11 +178,6 @@ def add_review():
     conn.close()
 
     return jsonify({"message": "Review submitted successfully!"})
-
-@app.route('/station_info/<int:station_id>')
-def station_info(station_id):
-    station = next((s for s in charging_stations if s['id'] == station_id), None)
-    return jsonify(station) if station else jsonify({"error": "Station not found"}), 404
 
 
 

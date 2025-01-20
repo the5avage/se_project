@@ -1,20 +1,30 @@
-<!-- templates/search_results.html -->
 {% for station in results %}
 <div>
     <p><b>{{ station.Name }}</b> - {{ station.Address }}</p>
-    <button onclick="selectStation({{ station.id }})">Select</button>
+    <button onclick="selectStation({{ station.id }})">Select</button>  <!-- Pass station.id -->
 </div>
 {% endfor %}
 
 <script>
     function selectStation(stationId) {
-        // Update selected station info
-        fetch(`/station_info/${stationId}`)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('station-name').innerText = data.Name;
-                document.getElementById('station-rating').innerText = 'Rating: ' + (data.Rating || 'N/A');
-                document.getElementById('station-id').value = data.id;
-            });
-    }
+    // Fetch station details from the backend
+    fetch(`/station_info/${stationId}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Station not found');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Update the DOM with the station details
+            document.getElementById('station-name').innerText = data.Name;
+            document.getElementById('station-address').innerText = 'Address: ' + data.Address;
+            document.getElementById('station-rating').innerText = 'Rating: ' + (data.Rating || 'N/A');
+            document.getElementById('station-id').value = data.id;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to fetch station information.');
+        });
+}
 </script>

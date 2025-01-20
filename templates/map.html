@@ -138,7 +138,7 @@
                 );
                 marker.on('click', function () {
                     // Update selected station info
-                    document.getElementById('station-name').innerText = station.Name;
+                    document.getElementById('station-name').innerText = station.Address;
                     document.getElementById('station-rating').innerText = 'Rating: ' + (station.Rating || 'N/A');
                     document.getElementById('station-id').value = station.id;  // Set station ID for review form
                 });
