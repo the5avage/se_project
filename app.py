@@ -4,8 +4,9 @@ import pandas as pd
 import geopandas as gpd
 from shapely import wkt
 import json
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, jsonify
 
+# Initialize Flask app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your-secret-key'
 
@@ -20,6 +21,17 @@ def init_db():
             password_hash TEXT NOT NULL
         )
     ''')
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS reviews (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            station_id INTEGER NOT NULL,
+            rating REAL NOT NULL,
+            comment TEXT,
+            FOREIGN KEY (user_id) REFERENCES users (id),
+            FOREIGN KEY (station_id) REFERENCES charging_stations (id)
+        )
+    ''')
     conn.commit()
     conn.close()
 
@@ -27,8 +39,15 @@ def init_db():
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
+# Global variable for charging stations
+charging_stations = []
+
+# Routes
+
 @app.route('/')
 def home():
+    global charging_stations  # Use the global variable
+
     # Load the GeoJSON data
     with open('output.geojson', 'r') as f:
         geojson = json.load(f)
@@ -45,13 +64,6 @@ def home():
 
     # Drop rows with missing latitude or longitude
     charging_stations = charging_stations.dropna(subset=['Breitengrad', 'Längengrad'])
-
-    # Check for invalid latitude and longitude values
-    # invalid_lat = charging_stations['Breitengrad'].str.contains('[^0-9,.-]', regex=True)
-    # invalid_lng = charging_stations['Längengrad'].str.contains('[^0-9,.-]', regex=True)
-
-    # # Drop rows with invalid coordinates
-    # charging_stations = charging_stations[~invalid_lat & ~invalid_lng]
 
     # Convert latitude and longitude to float
     charging_stations['Latitude'] = charging_stations['Breitengrad'].str.replace(',', '.').astype(float)
@@ -73,8 +85,11 @@ def home():
         'Längengrad': 'Longitude'
     })
 
+    # Assign unique IDs to each station
+    charging_stations['id'] = range(1, len(charging_stations) + 1)
+
     # Convert to a list of dictionaries
-    charging_stations = charging_stations[['Name', 'Address', 'Latitude', 'Longitude', 'PLZ']].to_dict('records')
+    charging_stations = charging_stations[['id', 'Name', 'Address', 'Latitude', 'Longitude', 'PLZ']].to_dict('records')
 
     # Pass both GeoJSON and charging station data to the template
     return render_template('map.html', geojson=geojson, charging_stations=charging_stations)
@@ -128,8 +143,40 @@ def logout():
     session.pop('user_id', None)
     return render_template('_success.html', message="Logged out successfully.")
 
+@app.route('/search_charging_station', methods=['POST'])
+def search_charging_station():
+    query = request.form.get('query', '').lower()
+    results = [station for station in charging_stations if query in station['Address'].lower()]
+    return render_template('search_results.html', results=results)
+
+@app.route('/add_review', methods=['POST'])
+def add_review():
+    if 'user_id' not in session:
+        return jsonify({"error": "You must be logged in to submit a review"}), 401
+
+    station_id = request.form.get('station_id')
+    rating = float(request.form.get('rating'))
+    comment = request.form.get('comment', '')
+
+    conn = sqlite3.connect('db.sqlite3')
+    cursor = conn.cursor()
+    cursor.execute('''
+        INSERT INTO reviews (user_id, station_id, rating, comment)
+        VALUES (?, ?, ?, ?)
+    ''', (session['user_id'], station_id, rating, comment))
+    conn.commit()
+    conn.close()
+
+    return jsonify({"message": "Review submitted successfully!"})
+
+@app.route('/station_info/<int:station_id>')
+def station_info(station_id):
+    station = next((s for s in charging_stations if s['id'] == station_id), None)
+    return jsonify(station) if station else jsonify({"error": "Station not found"}), 404
 
 
+
+# Run the app
 if __name__ == '__main__':
     init_db()  # Initialize database schema
     app.run(debug=True)

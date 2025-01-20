@@ -1,7 +1,7 @@
 import unittest
-from domains.entities.user import User
-from domains.entities.review import Review
-from domains.events.review_added import ReviewAdded
+from domains.entities.User import User
+from domains.value_objects.Review import Review
+from domains.events.reviewAdded import ReviewAdded
 
 class TestUser(unittest.TestCase):
     def setUp(self):

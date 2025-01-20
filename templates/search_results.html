@@ -1,0 +1,20 @@
+<!-- templates/search_results.html -->
+{% for station in results %}
+<div>
+    <p><b>{{ station.Name }}</b> - {{ station.Address }}</p>
+    <button onclick="selectStation({{ station.id }})">Select</button>
+</div>
+{% endfor %}
+
+<script>
+    function selectStation(stationId) {
+        // Update selected station info
+        fetch(`/station_info/${stationId}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('station-name').innerText = data.Name;
+                document.getElementById('station-rating').innerText = 'Rating: ' + (data.Rating || 'N/A');
+                document.getElementById('station-id').value = data.id;
+            });
+    }
+</script>
