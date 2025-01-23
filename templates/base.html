@@ -8,63 +8,41 @@
     <script src="https://unpkg.com/htmx.org"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="{{ url_for('map_view') }}">Map</a>
-        {% if session.get('user_id') %}
-        <a hx-post="{{ url_for('logout') }}" hx-target="#feedback" hx-swap="innerHTML">Logout</a>
-        {% else %}
-        <a href="{{ url_for('login') }}">Login</a>
-        <a href="{{ url_for('register') }}">Register</a>
-        {% endif %}
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="{{ url_for('map_view') }}" class="navbar-brand">Map</a>
+            <div class="navbar-links">
+                {% if 'user_id' in session %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+                {% else %}
+                <a href="{{ url_for('login') }}" class="navbar-link">Login</a>
+                <a href="{{ url_for('register') }}" class="navbar-link">Register</a>
+                {% endif %}
+            </div>
+        </div>
     </nav>
     <div id="feedback"></div>
     <div class="container">
-        <!-- Map Content -->
         {% block content %}{% endblock %}
-
-        <!-- Search Input -->
-        <div id="search-section">
-            <input 
-                type="text" 
-                id="search-query" 
-                placeholder="Search by street name..." 
-                hx-post="{{ url_for('search_charging_station') }}" 
-                hx-trigger="keyup changed delay:500ms" 
-                hx-target="#search-results" 
-                hx-swap="innerHTML"
-                name="query" 
-            >
-            <div id="search-results"></div>  <!-- Results will be inserted here -->
-        </div>
-
-        <!-- Selected Station Info -->
-       <!-- Selected Station Info -->
-<div id="selected-station-info" style="margin-top: 20px;">
-    <h3>Selected Station</h3>
-    <p id="station-company">No station selected</p>
-    <p id="station-name">No station selected</p>  <!-- Ensure this ID exists -->
-    <p id="station-rating">Rating: N/A</p>       <!-- Ensure this ID exists -->
-</div>
-
-<!-- Review GUI -->
-<div id="review-section" style="margin-top: 20px;">
-    <h3>Leave a Review</h3>
-    <form 
-        id="review-form" 
-        hx-post="{{ url_for('add_review') }}" 
-        hx-target="#feedback" 
-        hx-swap="innerHTML"
-    >
-        <input type="hidden" id="station-id" name="station_id">  <!-- Ensure this ID exists -->
-        <label for="rating">Rating (0-5):</label>
-        <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" required>
-        <label for="comment">Comment:</label>
-        <textarea id="comment" name="comment"></textarea>
-        <button type="submit">Submit Review</button>
-    </form>
-</div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('map_view') }}">Map</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2021 Flask Web App</p>
+        </div>
+    </footer>
+    
 </body>
 </html>

@@ -6,6 +6,9 @@
 {% endfor %}
 
 <script>
+
+
+    
  function selectStation(stationId) {
     console.log("Selected Station ID:", stationId);  // Debug log
 
@@ -35,8 +38,43 @@
             stationRatingElement.innerText = 'Rating: ' + (data.Rating || 'N/A');
             stationIdElement.value = data.id;
 
+           fetch(`/ratingAndReview/${stationId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch reviews');
+                    }
+                    return response.json();
+                })
+                .then(reviews => {
+                    console.log("Reviews:", reviews);  // Debug log
+
+                    // Check if the reviews element exists
+                    const reviewsElement = document.getElementById('station-reviews');
+
+                    if (!reviewsElement) {
+                        throw new Error('Reviews element not found in the DOM');
+                    }
+
+                    // Clear the reviews element
+                    reviewsElement.innerHTML = '';
+
+                    // Add each review to the reviews element
+                    reviews.forEach(review => {
+                        const reviewElement = document.createElement('div');
+                        reviewElement.innerHTML = `
+                            <p><b>${review[0]}</b> - ${review[1]} stars</p>
+                            <p>Comment: ${review[2]}</p>
+                        `;
+                        reviewsElement.appendChild(reviewElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching reviews:', error);
+                });
+
             // Clear the search results dropdown
             document.getElementById('search-results').innerHTML = '';
+            document.getElementById('selected-station-info').scrollIntoView({ behavior: 'smooth' });
         })
         .catch(error => {
             console.error('Error:', error);

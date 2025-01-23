@@ -3,10 +3,106 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.choropleth/dist/choropleth.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
-<h1>Map</h1>
+<h1 style="text-align: center; font-size: 2.5em; color: #4CAF50; animation: fadeIn 2s ease-in-out;">
+    Charging Stations Map
+</h1>
+<style>
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+</style>
+
+<!-- Search Input -->
+<div id="search-section" class="search-section">
+    <input 
+        type="text" 
+        id="search-query" 
+        placeholder="Search by street name..." 
+        hx-post="{{ url_for('search_charging_station') }}" 
+        hx-trigger="keyup changed delay:500ms" 
+        hx-target="#search-results" 
+        hx-swap="innerHTML"
+        name="query" 
+    >
+    <div id="search-results" class="search-results"></div>  <!-- Results will be inserted here -->
+</div>
+
 <div id="map" style="height: 500px;"></div>
+
+<!-- Selected Station Info -->
+<div id="selected-station-info" class="station-info">
+    <h3>Selected Station</h3>
+    <div class="station-details">
+        <p id="station-company">No station selected</p>
+        <p id="station-name">No station selected</p>
+        <p id="station-rating">Overall Rating: N/A</p>
+        <div id="station-reviews">
+            <h3>Reviews</h3>
+            <div id="reviews-list"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Review GUI -->
+<div id="review-section" class="container mt-5">
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Leave a Review</h3>
+        </div>
+        <div class="card-body">
+            <form 
+                id="review-form" 
+                hx-post="{{ url_for('add_review') }}" 
+                hx-target="#feedback" 
+                hx-swap="innerHTML"
+            >
+                <input type="hidden" id="station-id" name="station_id">  <!-- Ensure this ID exists -->
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">&#9733;</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3">Submit Review</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .star-rating {
+        direction: rtl;
+        display: inline-block;
+        padding: 0;
+    }
+    .star-rating input[type="radio"] {
+        display: none;
+    }
+    .star-rating label {
+        font-size: 2em;
+        color: #ddd;
+        cursor: pointer;
+    }
+    .star-rating input[type="radio"]:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: #f5b301;
+    }
+</style>
+
 <script>
+   
     // Initialize the map
     var map = L.map('map').setView([52.5200, 13.4050], 10);  // Centered on Berlin
 
@@ -151,5 +247,9 @@
             })
         ).addTo(map);
     }
+
+    
+    
+    
 </script>
 {% endblock %}

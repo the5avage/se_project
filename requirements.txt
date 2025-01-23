@@ -1,1 +1,6 @@
 Flask
+pandas
+geopandas
+shapely
+folium
+openpyxl
