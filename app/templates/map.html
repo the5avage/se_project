@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Charging Stations Map{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-success" style="animation: fadeIn 2s ease-in-out;">Charging Stations Map</h1>
+
+<!-- Map Section -->
+<div id="map" style="height: 500px; margin-top: 20px;"></div>
+
+<!-- Selected Station Info -->
+<div id="selected-station-info" class="station-info mt-3">
+    <h3>Selected Station</h3>
+    <p id="station-company">No station selected</p>
+    <p id="station-name">No station selected</p>
+    <p id="station-rating">Overall Rating: N/A</p>
+    <h4>Reviews:</h4>
+    <ul id="station-reviews"></ul>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<script>
+    // Initialize the map centered on Berlin
+    var map = L.map('map').setView([52.5200, 13.4050], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
+
+    // Parse GeoJSON data and charging stations from Flask
+    var geojsonData = {{ geojson | tojson | safe }};
+    var chargingStations = {{ charging_stations | tojson | safe }};
+
+    // Function to show charging stations within a polygon
+    function showChargingStationsInPolygon(polygonLayer) {
+        if (window.chargingStationLayer) {
+            map.removeLayer(window.chargingStationLayer);
+        }
+
+        var polygonFeature = polygonLayer.toGeoJSON();
+        var filteredStations = chargingStations.filter(function (station) {
+            var point = turf.point([station.Longitude, station.Latitude]);
+            return turf.booleanPointInPolygon(point, polygonFeature);
+        });
+
+        // Add markers for the filtered stations
+        window.chargingStationLayer = L.layerGroup(
+            filteredStations.map(function (station) {
+                var marker = L.marker([station.Latitude, station.Longitude]).addTo(map);
+                marker.bindPopup(
+                    `<b>${station.Name}</b><br>${station.Address}`
+                );
+                marker.on('click', function () {
+                    fetchStationInfo(station.id);
+                });
+                return marker;
+            })
+        ).addTo(map);
+    }
+
+    // Fetch and display station info and reviews
+    function fetchStationInfo(stationId) {
+        fetch(`/map/station_info/${stationId}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('station-company').innerText = `Company: ${data.Name}`;
+                document.getElementById('station-name').innerText = `Address: ${data.Address}`;
+                document.getElementById('station-rating').innerText = `Overall Rating: ${data.average_rating || 'N/A'}`;
+                const reviewsList = document.getElementById('station-reviews');
+                reviewsList.innerHTML = '';
+                if (data.reviews && data.reviews.length > 0) {
+                    data.reviews.forEach(review => {
+                        const li = document.createElement('li');
+                        li.innerText = `${review.username}: ${review.comment} (${review.rating}/5)`;
+                        reviewsList.appendChild(li);
+                    });
+                } else {
+                    reviewsList.innerHTML = '<li>No reviews available.</li>';
+                }
+            });
+    }
+
+    // Add GeoJSON layer to the map
+    L.geoJSON(geojsonData, {
+        style: function (feature) {
+            return { fillColor: '#4CAF50', weight: 2, color: 'black', fillOpacity: 0.7 };
+        },
+        onEachFeature: function (feature, layer) {
+            layer.bindPopup(`District: ${feature.properties.Ort}<br>PLZ: ${feature.properties.PLZ}`);
+            layer.on('click', function (e) {
+                showChargingStationsInPolygon(layer);
+            });
+        }
+    }).addTo(map);
+</script>
+{% endblock %}

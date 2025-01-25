@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}My Reviews{% endblock %}
+
+{% block content %}
+
+<h1 class="text-center" style="margin-top: 20px; color: #4CAF50;">My Reviews</h1>
+
+<div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    {% if reviews %}
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff;">
+            <thead style="background-color: #4CAF50; color: white; text-align: center;">
+                <tr>
+                    <th style="padding: 12px 15px; border: 1px solid #ddd;">#</th>
+                    <th style="padding: 12px 15px; border: 1px solid #ddd;">Station ID</th>
+                    <th style="padding: 12px 15px; border: 1px solid #ddd;">Rating</th>
+                    <th style="padding: 12px 15px; border: 1px solid #ddd;">Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for review in reviews %}
+                    <tr style="background-color: {% if loop.index is odd %} #f2f2f2 {% else %} #fff {% endif %};">
+                        <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ loop.index }}</td>
+                        <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ review.station_id }}</td>
+                        <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ review.station_ranking }}</td>
+                        <td style="padding: 12px 15px; border: 1px solid #ddd;">{{ review.comment }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p style="text-align: center; font-size: 1.2rem; color: #777; font-style: italic;">No reviews found.</p>
+    {% endif %}
+</div>
+
+{% endblock %}
+
+
