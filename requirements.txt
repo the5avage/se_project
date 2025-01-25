@@ -4,3 +4,4 @@ geopandas
 shapely
 folium
 openpyxl
+flask_caching
