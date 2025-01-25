@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
-from domains.entities.review import Review  # Import the Review class
+from domains.value_objects.Review import Review  # Import the Review class
 
 @dataclass
 class ReviewAdded:

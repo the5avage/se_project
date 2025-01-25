@@ -1,3 +1,3 @@
-from .charging_station_searched import ChargingStationSearched
-from .charging_station_selected import ChargingStationSelected
-from .review_added import ReviewAdded
+from .chargingStationSearched import ChargingStationSearched
+from .chargingStationSelected import ChargingStationSelected
+from .reviewAdded import ReviewAdded

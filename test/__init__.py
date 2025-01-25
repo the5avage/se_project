@@ -1,11 +1,12 @@
 # events/__init__.py
-from .charging_station_searched import ChargingStationSearched
-from .charging_station_selected import ChargingStationSelected
-from .review_added import ReviewAdded
+from domains.events.chargingStationSearched import ChargingStationSearched
+
+from domains.events.chargingStationSelected import ChargingStationSelected
+from domains.events.reviewAdded import ReviewAdded
 
 # models/__init__.py
-from .user import User
-from .review import Review
+from domains.entities.User import User
+from domains.value_objects.Review import Review
 
 # tests/__init__.py
 # This file can remain empty.
