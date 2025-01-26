@@ -1,5 +1,5 @@
 from app.repositories.base_repository import BaseRepository
-from app.models.review import Review
+from app.value_objects.review import Review
 
 class ReviewRepository(BaseRepository):
     def create_review(self, user_id, username, station_id, rating, comment):

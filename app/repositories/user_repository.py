@@ -1,9 +1,9 @@
 # handle database operations related to users
 from app.repositories.base_repository import BaseRepository
-from app.models.user import User
+from app.entities.user import User
 
 from app.repositories.base_repository import BaseRepository
-from app.models.user import User
+from app.entities.user import User
 
 class UserRepository(BaseRepository):
     def create_user(self, username, password_hash):

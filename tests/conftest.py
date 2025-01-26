@@ -1,5 +1,5 @@
 import pytest
-from app.models.db import get_connection, init_db
+from app.entities.db import get_connection, init_db
 
 @pytest.fixture(scope="function")
 def reset_database():

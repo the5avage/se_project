@@ -1,7 +1,7 @@
 import os
 import logging
 from app import create_app
-from app.models.db import init_db  # Import your database initialization function
+from app.entities.db import init_db  # Import your database initialization function
 
 # Initialize the Flask app
 app = create_app()
