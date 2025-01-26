@@ -7,12 +7,11 @@ class MapRepository(BaseRepository):
     def get_geojson(self):
         with open('updated_output.geojson', 'r') as f:
             return json.load(f)
-        
-        
+
     def  get_charging_stations(self):
     # Load the charging station dataset
-        df_lstat = pd.read_excel("/workspaces/se_project/app/datasets/Ladesaeulenregister_SEP.xlsx", header=10)
-        df_postcode = pd.read_csv("/workspaces/se_project/app/datasets/Postcode_BerlinDistricts.csv")
+        df_lstat = pd.read_excel("app/datasets/Ladesaeulenregister_SEP.xlsx", header=10)
+        df_postcode = pd.read_csv("app/datasets/Postcode_BerlinDistricts.csv")
 
         # Normalize the 'Ort' column and filter for Berlin
         df_lstat['Ort'] = df_lstat['Ort'].str.strip().str.lower()
