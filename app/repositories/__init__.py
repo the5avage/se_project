@@ -1,4 +1,0 @@
-from app.repositories.base_repository import BaseRepository
-from app.repositories.user_repository import UserRepository
-from app.repositories.review_repository import ReviewRepository
-from app.repositories.map_repository import MapRepository

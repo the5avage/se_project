@@ -1,4 +1,4 @@
-from app.repositories.base_repository import BaseRepository
+from app.domains.repositories.base_repository import BaseRepository
 import json
 import pandas as pd
 

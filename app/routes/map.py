@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from app.events.map_events import handle_home_event, handle_station_info_event, handle_contact_event
+from app.domains.events.map_events import handle_home_event, handle_station_info_event, handle_contact_event
 
 map_bp = Blueprint("map", __name__)
 

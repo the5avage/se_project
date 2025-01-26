@@ -1,5 +1,5 @@
 from flask import Blueprint, request, session, render_template, redirect, url_for, flash
-from app.events.auth_events import register_user, authenticate_user, logout_user
+from app.domains.events.auth_events import register_user, authenticate_user, logout_user
 
 auth_bp = Blueprint('auth', __name__)
 

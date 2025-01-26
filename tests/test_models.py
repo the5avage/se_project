@@ -1,4 +1,4 @@
-from app.repositories.review_repository import ReviewRepository
+from app.domains.repositories.review_repository import ReviewRepository
 
 def test_create_review(client):
     review_repo = ReviewRepository()

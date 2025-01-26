@@ -1,5 +1,5 @@
-from app.entities.db import hash_password
-from app.repositories.user_repository import UserRepository
+from app.domains.entities.db import hash_password
+from app.domains.repositories.user_repository import UserRepository
 
 user_repo = UserRepository()
 

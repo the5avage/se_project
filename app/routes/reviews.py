@@ -1,6 +1,6 @@
 from flask import Blueprint, request, render_template, session, redirect, url_for, flash
-from app.repositories.review_repository import ReviewRepository
-from app.events.review_events import ReviewAdded, ReviewPageAccessed, UserReviewsAccessed
+from app.domains.repositories.review_repository import ReviewRepository
+from app.domains.events.review_events import ReviewAdded, ReviewPageAccessed, UserReviewsAccessed
 
 reviews_bp = Blueprint('reviews', __name__)
 review_repo = ReviewRepository()

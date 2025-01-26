@@ -1,6 +1,6 @@
 from flask import render_template, jsonify
-from app.repositories.map_repository import MapRepository
-from app.repositories.review_repository import ReviewRepository
+from app.domains.repositories.map_repository import MapRepository
+from app.domains.repositories.review_repository import ReviewRepository
 from app import cache
 
 map_repo = MapRepository()
