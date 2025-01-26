@@ -6,3 +6,4 @@ folium
 openpyxl
 flask_caching
 pytest
+coverage

@@ -27,3 +27,10 @@ python app.py
 ```
 
 ### 5. Open http://127.0.0.1:5000 in your browser
+
+### 6. Calculate Test Coverate
+```shell
+coverage run -m pytest
+coverage report
+```
+

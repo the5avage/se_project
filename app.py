@@ -1,11 +1,11 @@
 import os
 import logging
 from app import create_app
-from app.models.db import init_db  # Import your database initialization function
+from app.domains.entities.db import init_db  # Import your database initialization function
+from app.domains.events.map_events import get_cached_data
 
 # Initialize the Flask app
 app = create_app()
-
 
 def setup_logging():
     """
@@ -31,8 +31,10 @@ if __name__ == "__main__":
 
     # Initialize the database
     if debug:
-        print("Initializing the database...")
+        print("Initializing the application...")
     init_db()
+
+    _, _ = get_cached_data() # Fill cache to speed up first load
 
     # Run the Flask application
     app.run(debug=debug, host="0.0.0.0", port=5000)
