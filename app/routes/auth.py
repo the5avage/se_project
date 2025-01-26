@@ -29,7 +29,7 @@ def login():
             # Set session data
             session['user_id'] = user.id
             session['username'] = user.username
-            return redirect(url_for('map.home'))
+            return redirect(url_for('root.home'))
         flash("Invalid credentials.")
         return redirect(url_for('auth.login'))
     return render_template('login.html')
@@ -38,4 +38,4 @@ def login():
 def logout():
     # Trigger the logout_user event
     logout_user(session)
-    return redirect(url_for('map.home'))
+    return redirect(url_for('root.home'))

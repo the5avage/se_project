@@ -23,7 +23,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="{{ url_for('map.home') }}" class="navbar-brand">
+            <a href="{{ url_for('root.home') }}" class="navbar-brand">
                 Flask Web App
                 {% if 'user_id' in session %}
                 <span  style=" display: flex; align-items: center; margin-right: 10px; font-size:20px; margin-top: 4px; color:goldenrod;">
@@ -39,7 +39,7 @@
                     <a href="{{ url_for('reviews.user_reviews') }}" class="navbar-link">
                         Reviews
                        </a>
-                        <a href="{{ url_for('reviews.add_review') }}" class="navbar-link">Add Review</a> <!-- Add Review Button -->
+                        <a href="#" class="navbar-link" onclick="navigateToAddReview(event)">Add Review</a> <!-- Add Review Button -->
                         <a href="{{ url_for('auth.logout') }}" class="navbar-link">Logout</a>
                     {% else %}
                         <a href="{{ url_for('auth.login') }}" class="navbar-link">Login</a>
@@ -64,9 +64,9 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <a href="{{ url_for('map.home') }}">Home</a>
-                <a href="{{ url_for('map.home') }}">Map</a>
-                <a href="{{ url_for('map.contact') }}">Contact</a>
+                <a href="{{ url_for('root.home') }}">Home</a>
+                <a href="{{ url_for('root.home') }}">Map</a>
+                <a href="{{ url_for('root.contact') }}">Contact</a>
             </div>
             <div class="footer-social">
                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -81,3 +81,15 @@
     {% block scripts %}{% endblock %}
 </body>
 </html>
+
+<script>
+    function navigateToAddReview(event) {
+        event.preventDefault();  // Prevent the default anchor behavior
+        const selectedStationId = localStorage.getItem('selectedStationId');
+        if (selectedStationId && selectedStationId !== 'null') {
+            window.location.href = "{{ url_for('reviews.add_review_page') }}?station_id=" + selectedStationId;
+        } else {
+            alert("Please select a station first.");
+        }
+    }
+</script>

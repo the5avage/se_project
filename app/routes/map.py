@@ -1,16 +1,21 @@
-from flask import Blueprint, render_template
-from app.domains.events.map_events import handle_home_event, handle_station_info_event, handle_contact_event
+from flask import Blueprint, render_template, jsonify, request
+from app.domains.repositories.map_repository import MapRepository
+from app.domains.repositories.review_repository import ReviewRepository
+
 
 map_bp = Blueprint("map", __name__)
-
-@map_bp.route('/')
-def home():
-    return handle_home_event()
+map_repo = MapRepository()
+review_repo = ReviewRepository()
 
 @map_bp.route('/station_info/<int:station_id>', methods=['GET'])
 def station_info(station_id):
-    return handle_station_info_event(station_id)
-
-@map_bp.route('/contact', methods=['GET'])
-def contact():
-    return handle_contact_event()
+    geojson, charging_stations = map_repo.get_cached_data()
+    # Find the station with the given ID
+    station = next((s for s in charging_stations if s['id'] == station_id), None)
+    
+    if station:
+        return jsonify(station)
+    else:
+        return jsonify({"error": "Station not found"}), 404
+    
+    
