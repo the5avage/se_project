@@ -7,6 +7,8 @@ from app.domains.events.map_events import get_cached_data
 # Initialize the Flask app
 app = create_app()
 
+
+
 def setup_logging():
     """
     Configure logging for the application.

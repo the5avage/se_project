@@ -12,11 +12,8 @@ def add_review_page():
         flash("You must be logged in to add a review.")
         return redirect(url_for('auth.login'))
     
-    # Emit ReviewPageAccessed event
-    event = ReviewPageAccessed(user_id=session.get('user_id'))
-    print(event)  # Log the event (can later be hooked into an event handler)
-
-    return render_template('add_review.html')
+    station_id = request.args.get('station_id')
+    return render_template('add_review.html', station_id=station_id)
 
 @reviews_bp.route('/add_review', methods=['POST'])
 def add_review():
@@ -41,7 +38,12 @@ def add_review():
     print(event)  # Log the event (can later be hooked into an event handler)
 
     flash("Review added successfully!")
-    return redirect(url_for('reviews.add_review'))
+    return '''
+        <script>
+            localStorage.setItem('selectedStationId', null);
+            window.location.href = '/';
+        </script>
+    '''
 
 @reviews_bp.route('/user_reviews', methods=['GET'])
 def user_reviews():

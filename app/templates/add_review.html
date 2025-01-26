@@ -19,9 +19,10 @@
 <!-- Add Review Form -->
 <form method="post" action="{{ url_for('reviews.add_review') }}" 
       style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <input type="hidden" id="station-id" name="station_id">
     <div class="form-group" style="margin-bottom: 15px;">
         <label for="station-id" style="font-weight: bold;">Station ID:</label>
-        <input type="text" id="station-id" name="station_id" class="form-control" placeholder="Enter Station ID" required>
+        <span id="station-id-label"></span>
     </div>
     <div class="form-group" style="margin-bottom: 15px;">
         <label for="rating" style="font-weight: bold;">Rating:</label>
@@ -42,4 +43,18 @@
         <button type="submit" class="btn btn-success" style="width: 100%; font-size: 16px;">Submit Review</button>
     </div>
 </form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let stationId = urlParams.get('station_id');
+        if (!stationId) {
+            stationId = localStorage.getItem('selectedStationId');
+        }
+        if (stationId) {
+            document.getElementById('station-id').value = stationId;
+            document.getElementById('station-id-label').innerText = stationId;
+        }
+    });
+    </script>
 {% endblock %}
