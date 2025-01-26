@@ -7,6 +7,7 @@ map_bp = Blueprint("map", __name__)
 map_repo = MapRepository()
 review_repo = ReviewRepository()
 
+
 def get_cached_data():
     geojson = cache.get('geojson')
     charging_stations = cache.get('charging_stations')
@@ -38,6 +39,8 @@ def station_info(station_id):
         "average_rating": average_rating,
         "reviews": reviews
     })
+    
+    
 @map_bp.route('/contact', methods=['GET'])
 def contact():
     return render_template('contact.html')

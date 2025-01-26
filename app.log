@@ -1173,3 +1173,293 @@
 2025-01-25 22:34:09,591 - werkzeug - INFO - 127.0.0.1 - - [25/Jan/2025 22:34:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-01-25 22:34:10,423 - werkzeug - INFO - 127.0.0.1 - - [25/Jan/2025 22:34:10] "GET /reviews/user_reviews HTTP/1.1" 200 -
 2025-01-25 22:34:10,469 - werkzeug - INFO - 127.0.0.1 - - [25/Jan/2025 22:34:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:16:51,331 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.11.63:5000
+2025-01-26 11:16:51,331 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 11:16:51,332 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:16:51,498 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:16:51,500 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:17:09,398 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:09] "GET / HTTP/1.1" 200 -
+2025-01-26 11:17:09,972 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:09] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 11:17:16,081 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-26 11:17:43,071 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:43] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 11:17:43,436 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:17:52,339 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:52] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-26 11:17:52,434 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:52] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 11:17:52,553 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:17:55,190 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:55] "GET /auth/register HTTP/1.1" 200 -
+2025-01-26 11:17:55,417 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:17:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:18:01,100 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:01] "GET / HTTP/1.1" 200 -
+2025-01-26 11:18:01,271 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:18:12,747 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:12] "GET /auth/register HTTP/1.1" 200 -
+2025-01-26 11:18:12,887 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:18:20,479 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:20] "POST /auth/register HTTP/1.1" 200 -
+2025-01-26 11:18:24,561 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:24] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 11:18:24,721 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:18:30,571 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:30] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-26 11:18:31,295 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:31] "GET / HTTP/1.1" 200 -
+2025-01-26 11:18:31,461 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:18:41,937 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:41] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 11:18:42,157 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:18:44,542 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:44] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 11:18:44,685 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:18:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:19:00,977 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:19:00] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 11:19:01,125 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:19:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:19:04,893 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:19:04] "GET / HTTP/1.1" 200 -
+2025-01-26 11:19:05,148 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:19:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:19:31,178 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:19:31] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 11:19:31,365 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:19:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:20:52,411 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:20:52] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 11:20:52,961 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:20:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:21:06,450 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:21:06] "GET / HTTP/1.1" 200 -
+2025-01-26 11:21:06,841 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:21:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:23:45,553 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:23:45] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 11:23:45,919 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:23:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:23:56,840 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:23:56] "GET / HTTP/1.1" 200 -
+2025-01-26 11:23:57,101 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:23:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:25:11,108 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:11,141 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:11,319 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:11,320 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:17,658 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:17,687 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:17,845 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:17,846 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:21,643 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:21,673 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:21,841 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:21,841 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:23,936 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:24,011 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:24,230 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:24,231 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:26,076 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:26,112 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:26,276 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:26,276 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:28,170 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:28,201 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:28,362 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:28,362 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:30,164 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:30,198 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:30,355 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:30,356 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:36,289 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:25:36,323 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:36,498 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:36,499 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:48,745 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountCreated.py', reloading
+2025-01-26 11:25:48,775 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:48,933 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:48,933 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:50,833 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountCreated.py', reloading
+2025-01-26 11:25:50,865 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:51,037 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:51,037 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:54,147 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountCreated.py', reloading
+2025-01-26 11:25:54,182 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:54,371 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:54,372 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:25:58,841 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountCreated.py', reloading
+2025-01-26 11:25:58,872 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:25:59,027 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:25:59,027 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:26:02,280 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountCreated.py', reloading
+2025-01-26 11:26:02,310 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:26:02,467 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:26:02,467 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:26:17,071 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:26:17,101 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:26:17,293 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:26:17,294 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:26:23,016 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:26:23,060 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:26:23,230 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:26:23,231 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:26:26,440 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:26:26,471 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:26:26,627 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:26:26,628 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:26:27,105 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/events/accountLoggedIn.py', reloading
+2025-01-26 11:26:27,135 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 11:26:27,307 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 11:26:27,308 - werkzeug - INFO -  * Debugger PIN: 203-952-892
+2025-01-26 11:32:53,327 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:32:53] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 11:32:53,790 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:32:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:37:41,764 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:37:41] "GET / HTTP/1.1" 200 -
+2025-01-26 11:37:42,256 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:37:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 11:37:49,750 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:37:49] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 11:37:50,118 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 11:37:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 12:49:04,323 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.10.143:5000
+2025-01-26 12:49:04,323 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 12:49:04,324 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 12:49:04,476 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 12:49:04,478 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 12:49:07,651 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 12:49:07] "GET / HTTP/1.1" 200 -
+2025-01-26 12:49:08,118 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 12:49:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 12:53:16,246 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 12:53:16,287 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 12:53:16,564 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 12:53:16,564 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 12:53:32,730 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 12:53:32,759 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:10:00,292 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.10.143:5000
+2025-01-26 13:10:00,292 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 13:10:00,292 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:10:00,445 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:10:00,445 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:10:03,889 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:10:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 13:10:04,399 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:10:04] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-26 13:10:04,400 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:10:04] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-26 13:10:05,064 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:10:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-26 13:10:05,127 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:10:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=gwbfGslr2kEXGUl5cknY HTTP/1.1" 200 -
+2025-01-26 13:10:05,534 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:10:05] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 13:15:16,931 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:17,019 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:17,231 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:17,231 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:24,648 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:24,701 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:24,985 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:24,986 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:28,314 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:28,344 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:28,500 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:28,500 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:33,244 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:33,297 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:33,522 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:33,523 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:36,667 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:36,697 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:36,856 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:36,856 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:44,075 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:44,106 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:44,260 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:44,260 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:47,634 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:47,664 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:47,873 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:47,887 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:52,466 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:52,496 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:15:52,660 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:15:52,661 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:15:59,886 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:15:59,917 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:16:00,131 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:16:00,132 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:16:04,708 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:16:04,738 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:16:04,891 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:16:04,892 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:16:08,261 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:16:08,292 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:16:08,451 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:16:08,451 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:25:54,444 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:25:54,474 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:37:47,688 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.10.143:5000
+2025-01-26 13:37:47,688 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 13:37:47,688 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:37:47,844 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:37:47,847 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:37:52,218 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:37:52] "GET / HTTP/1.1" 200 -
+2025-01-26 13:37:52,744 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:37:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 13:43:52,704 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:43:52,746 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:43:52,923 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:43:52,923 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:43:54,752 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/models/db.py', reloading
+2025-01-26 13:43:54,790 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:43:54,951 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:43:54,951 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:44:07,160 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 13:44:07,202 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:44:07,484 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:44:07,484 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:44:13,839 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 13:44:13,870 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:49:39,800 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.10.143:5000
+2025-01-26 13:49:39,800 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 13:49:39,801 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:49:40,186 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:49:40,187 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:49:43,588 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:49:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 13:49:44,259 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:49:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-26 13:49:44,260 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:49:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-26 13:49:44,767 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:49:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 13:49:44,768 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:49:44] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Gz6kNNiw9nK3aNOcmNJD HTTP/1.1" 200 -
+2025-01-26 13:49:45,371 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:49:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 13:50:00,589 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 13:50:00,774 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:50:01,261 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:50:01,261 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:50:03,214 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 13:50:03,287 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:50:03,679 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:50:03,680 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:50:08,559 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:50:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 13:50:08,786 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:50:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-26 13:50:08,787 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:50:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-26 13:50:09,048 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:50:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 13:50:09,276 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:50:09] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=HSM8TfMQ3AV4xpY4o08m HTTP/1.1" 200 -
+2025-01-26 13:50:09,781 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:50:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 13:50:44,564 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 13:50:44,685 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:50:45,080 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:50:45,081 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:50:59,923 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 13:50:59,981 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:51:00,410 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:51:00,411 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:51:15,481 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:15] "GET / HTTP/1.1" 200 -
+2025-01-26 13:51:16,531 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 13:51:42,973 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:42] "GET / HTTP/1.1" 200 -
+2025-01-26 13:51:43,726 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 13:51:55,610 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:55] "[33mGET /map/station_info/2484 HTTP/1.1[0m" 404 -
+2025-01-26 13:51:57,699 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:57] "[33mGET /map/station_info/2484 HTTP/1.1[0m" 404 -
+2025-01-26 13:51:59,084 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:51:59] "[33mGET /map/station_info/2480 HTTP/1.1[0m" 404 -
+2025-01-26 13:52:00,179 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:52:00] "[33mGET /map/station_info/2480 HTTP/1.1[0m" 404 -
+2025-01-26 13:52:03,262 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:52:03] "[33mGET /map/station_info/2473 HTTP/1.1[0m" 404 -
+2025-01-26 13:52:04,514 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:52:04] "[33mGET /map/station_info/2484 HTTP/1.1[0m" 404 -
+2025-01-26 13:56:13,292 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 13:56:13,374 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 13:56:14,070 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 13:56:14,070 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 13:59:40,951 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:59:40] "GET / HTTP/1.1" 200 -
+2025-01-26 13:59:41,461 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 13:59:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 14:02:42,531 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 14:02:42] "GET / HTTP/1.1" 200 -
+2025-01-26 14:02:42,894 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 14:02:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 14:07:51,231 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 14:07:51,311 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 14:07:51,728 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 14:07:51,730 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 14:08:01,517 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 14:08:01,582 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 14:08:02,138 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 14:08:02,138 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 14:09:34,784 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 14:09:34] "GET / HTTP/1.1" 200 -
+2025-01-26 14:09:35,270 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 14:09:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 14:12:00,331 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 14:12:00] "GET / HTTP/1.1" 200 -
+2025-01-26 14:12:01,451 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 14:12:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 14:13:03,757 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/repositories/map_repository.py', reloading
+2025-01-26 14:13:03,838 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 14:13:04,258 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 14:13:04,258 - werkzeug - INFO -  * Debugger PIN: 111-503-939

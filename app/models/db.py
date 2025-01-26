@@ -51,8 +51,8 @@ def init_db():
 
     conn.commit()
     conn.close()
-
-
+    
+    
 def hash_password(password):
     """
     Hashes a plaintext password using SHA-256 and returns the hashed value.

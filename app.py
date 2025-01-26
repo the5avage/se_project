@@ -6,6 +6,7 @@ from app.models.db import init_db  # Import your database initialization functio
 # Initialize the Flask app
 app = create_app()
 
+
 def setup_logging():
     """
     Configure logging for the application.
