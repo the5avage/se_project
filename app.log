@@ -1463,3 +1463,617 @@
 2025-01-26 14:13:03,838 - werkzeug - INFO -  * Restarting with stat
 2025-01-26 14:13:04,258 - werkzeug - WARNING -  * Debugger is active!
 2025-01-26 14:13:04,258 - werkzeug - INFO -  * Debugger PIN: 111-503-939
+2025-01-26 17:25:15,389 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 17:25:15,389 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 17:25:15,390 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:25:15,814 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 17:25:15,823 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 17:25:40,318 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:25:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 17:25:40,810 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:25:40] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-26 17:25:40,958 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:25:40] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-26 17:25:41,320 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:25:41] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-26 17:25:41,554 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:25:41] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=29Aq71drPcYwKWu0VDb0 HTTP/1.1" 200 -
+2025-01-26 17:25:42,529 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:25:42] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 17:28:43,945 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/search.py', reloading
+2025-01-26 17:28:44,101 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:28:44,595 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 17:28:44,601 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 17:29:26,864 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:29:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 17:29:27,499 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:29:27] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-26 17:29:27,504 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:29:27] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-26 17:29:27,781 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:29:27] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=nA85StxwDxHQf8fCjAOI HTTP/1.1" 200 -
+2025-01-26 17:29:27,952 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:29:27] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 17:29:28,609 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:29:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 17:30:40,738 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app.py', reloading
+2025-01-26 17:30:40,885 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:31:42,014 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 17:31:42,014 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 17:31:42,014 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:31:42,400 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 17:31:42,400 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 17:32:02,944 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:32:02] "GET / HTTP/1.1" 200 -
+2025-01-26 17:32:03,876 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:32:03] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 17:32:09,023 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:32:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-26 17:32:11,738 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:32:11] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 17:32:13,489 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:32:13] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 17:32:19,815 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:32:19] "GET /station_info/15 HTTP/1.1" 200 -
+2025-01-26 17:32:58,982 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/search.py', reloading
+2025-01-26 17:32:59,083 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:32:59,565 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 17:32:59,566 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 17:33:01,412 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/search.py', reloading
+2025-01-26 17:33:01,472 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:33:01,970 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 17:33:01,970 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 17:42:58,920 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app.py', reloading
+2025-01-26 17:42:58,988 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:44:00,727 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 17:44:00,727 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 17:44:00,728 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 17:44:01,135 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 17:44:01,136 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 17:45:33,251 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:45:33] "GET / HTTP/1.1" 200 -
+2025-01-26 17:45:34,412 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:45:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 17:46:52,544 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:46:52] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 17:46:55,666 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:46:55] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 17:46:59,650 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:46:59] "GET /station_info/86 HTTP/1.1" 200 -
+2025-01-26 17:56:35,329 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:56:35] "GET /station_info/86 HTTP/1.1" 200 -
+2025-01-26 17:56:39,288 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:56:39] "GET / HTTP/1.1" 200 -
+2025-01-26 17:56:39,654 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:56:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 17:56:49,720 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:56:49] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 17:56:51,312 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 17:56:51] "[33mGET /map.station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:02:22,485 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:02:22] "GET / HTTP/1.1" 200 -
+2025-01-26 18:02:22,885 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:02:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:07:47,990 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:07:47] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:07:50,132 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:07:50] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:11:45,153 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:11:45] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:12:30,763 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:12:30] "GET / HTTP/1.1" 200 -
+2025-01-26 18:12:31,445 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:12:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:12:33,915 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:12:33] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 18:12:35,188 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:12:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:13:12,480 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:13:12] "GET / HTTP/1.1" 200 -
+2025-01-26 18:13:12,992 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:13:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:13:29,618 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:13:29] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:13:32,847 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:13:32] "[33mGET /map/station_info/15 HTTP/1.1[0m" 404 -
+2025-01-26 18:13:33,018 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:13:33] "[33mGET /map/station_info/15 HTTP/1.1[0m" 404 -
+2025-01-26 18:13:43,471 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:13:43] "[33mGET /map/station_info/15 HTTP/1.1[0m" 404 -
+2025-01-26 18:15:04,693 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:15:04] "[33mGET /map/station_info/15 HTTP/1.1[0m" 404 -
+2025-01-26 18:15:16,331 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:15:16] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:15:18,244 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:15:18] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:18:05,517 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:18:05] "GET / HTTP/1.1" 200 -
+2025-01-26 18:18:05,981 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:18:05] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 18:18:33,983 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:18:33] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:18:34,556 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:18:34] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:18:36,676 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:18:36] "[33mGET /map/station_info/15 HTTP/1.1[0m" 404 -
+2025-01-26 18:19:04,967 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app.py', reloading
+2025-01-26 18:19:05,047 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:19:43,933 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 18:19:43,933 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 18:19:43,934 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:19:44,324 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:19:44,324 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:20:04,869 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:20:04] "GET / HTTP/1.1" 200 -
+2025-01-26 18:20:05,287 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:20:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:22:11,313 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:22:11] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:22:14,509 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:22:14] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:22:16,111 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:22:16] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:22:43,451 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:22:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:22:59,583 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:22:59] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:23:33,769 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:23:33] "[33mGET /map/station_info/93 HTTP/1.1[0m" 404 -
+2025-01-26 18:28:13,681 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:28:13] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 18:29:44,025 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:29:44] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:32:29,412 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:32:29] "[33mGET /station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:32:32,455 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:32:32] "GET / HTTP/1.1" 200 -
+2025-01-26 18:32:32,934 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:32:32] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 18:33:13,849 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:33:13] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:33:16,872 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:33:16] "[33mGET /map.station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:46:59,916 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:46:59] "GET / HTTP/1.1" 200 -
+2025-01-26 18:47:00,717 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:47:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:47:06,350 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:47:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:47:37,176 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:47:37] "GET / HTTP/1.1" 200 -
+2025-01-26 18:47:37,442 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:47:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:48:48,452 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:48:48] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:48:49,442 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:48:49] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:48:51,962 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:48:51] "[33mGET /map.station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:48:57,431 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:48:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:49:19,487 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:49:19] "[33mGET /map.station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:50:33,399 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:50:33] "[33mGET /map.station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:50:51,081 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:50:51] "[33mGET /map.station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:51:13,710 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 18:51:13,711 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 18:51:13,711 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:51:14,101 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:51:14,101 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:51:32,451 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:51:32] "GET / HTTP/1.1" 200 -
+2025-01-26 18:51:32,891 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:51:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:51:42,254 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:51:42] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:51:47,214 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:51:47] "[33mGET /map/station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:52:51,378 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:52:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:52:56,639 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:52:56] "[33mGET /map/station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:53:02,145 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:53:02] "[33mGET /map/station_info/${stationId} HTTP/1.1[0m" 404 -
+2025-01-26 18:54:26,361 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 18:54:26,361 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 18:54:26,362 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:54:26,752 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:54:26,752 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:54:44,269 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:54:44] "GET / HTTP/1.1" 200 -
+2025-01-26 18:54:44,672 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:54:44] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 18:54:57,368 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:54:57] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 18:55:03,666 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:55:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:55:13,872 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:55:13] "[33mGET /map/station_info/7 HTTP/1.1[0m" 404 -
+2025-01-26 18:55:52,924 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 18:55:53,026 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:55:53,610 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:55:53,611 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:56:00,495 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 18:56:00,554 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:56:00,951 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:56:00,951 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:56:26,401 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 18:56:26,462 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:56:26,852 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:56:26,852 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:56:41,822 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:56:41] "[33mGET /map/station_info/7 HTTP/1.1[0m" 404 -
+2025-01-26 18:56:58,871 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 18:56:58,932 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:56:59,319 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:56:59,319 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:57:29,326 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:57:29] "[33mGET /map/station_info/10 HTTP/1.1[0m" 404 -
+2025-01-26 18:58:15,557 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:58:15] "[33mGET /map/station_info/10 HTTP/1.1[0m" 404 -
+2025-01-26 18:59:13,706 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 18:59:13,779 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:59:14,192 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:59:14,193 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:59:16,048 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 18:59:16,109 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:59:16,505 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:59:16,505 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 18:59:21,831 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:59:21] "[33mGET /map/station_info/10 HTTP/1.1[0m" 404 -
+2025-01-26 19:01:15,340 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:15] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 19:01:15,607 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:15] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 19:01:24,504 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:24] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-26 19:01:24,652 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:24] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 19:01:24,868 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:01:36,696 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:36] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-26 19:01:36,811 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:36] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 19:01:37,015 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:01:38,936 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:38] "GET /auth/register HTTP/1.1" 200 -
+2025-01-26 19:01:39,104 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:01:47,308 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:47] "POST /auth/register HTTP/1.1" 200 -
+2025-01-26 19:01:48,646 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:48] "GET /auth/login HTTP/1.1" 200 -
+2025-01-26 19:01:48,845 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:01:54,241 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:01:54] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-26 19:02:08,579 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:02:08] "GET / HTTP/1.1" 200 -
+2025-01-26 19:02:09,450 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:02:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:02:15,687 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:02:15] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 19:02:15,874 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:02:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:04:26,124 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:04:26] "GET / HTTP/1.1" 200 -
+2025-01-26 19:04:26,589 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:04:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:04:39,445 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:04:39] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:04:40,813 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:04:40] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:04:50,480 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:04:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:05:38,650 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:05:38] "GET / HTTP/1.1" 200 -
+2025-01-26 19:05:39,111 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:05:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:05:44,224 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 19:05:44,224 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 19:05:44,225 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:05:44,643 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:05:44,644 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:06:01,168 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:06:01] "GET / HTTP/1.1" 200 -
+2025-01-26 19:06:01,329 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:06:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:06:09,776 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:06:09] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:06:17,441 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:06:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:08:14,724 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 19:08:14,724 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 19:08:14,725 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:08:15,149 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:08:15,149 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:08:34,696 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:08:34] "GET / HTTP/1.1" 200 -
+2025-01-26 19:08:35,089 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:08:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:08:41,984 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:08:41] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:08:53,261 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:08:53] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:08:53,869 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:08:53] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:09:06,271 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:09:06] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:09:06,811 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:09:06] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:10:00,977 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:10:00] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:10:01,968 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:10:01] "[35m[1mPOST /search/charging_station HTTP/1.1[0m" 500 -
+2025-01-26 19:10:18,151 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:10:18] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:10:19,578 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:10:19] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:10:45,447 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:10:45] "[33mGET /map/station_info/86 HTTP/1.1[0m" 404 -
+2025-01-26 19:11:41,555 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:11:42,566 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:11:42,975 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:11:42,976 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:11:51,394 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:11:51,457 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:11:51,916 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:11:51,917 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:11:53,759 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:11:53,829 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:11:54,233 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:11:54,233 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:11:59,213 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:11:59,419 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:11:59,882 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:11:59,883 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:10,845 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:12:10,904 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:12:11,288 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:12:11,288 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:19,506 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:12:19,589 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:12:20,129 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:12:20,129 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:21,918 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:12:21,979 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:12:22,396 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:12:22,397 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:24,266 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:12:24,336 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:12:24,794 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:12:24,795 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:25,527 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:12:25,587 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:12:25,998 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:12:25,998 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:29,086 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:12:29,146 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:12:29,532 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:12:29,533 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:12:32,666 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:12:32] "[33mGET /map/station_info/93 HTTP/1.1[0m" 404 -
+2025-01-26 19:12:47,511 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:12:47] "[33mGET /map/station_info/93 HTTP/1.1[0m" 404 -
+2025-01-26 19:12:53,497 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:12:53] "[33mGET /map/station_info/98 HTTP/1.1[0m" 404 -
+2025-01-26 19:14:14,282 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:14:14,343 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:14:14,745 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:14:14,745 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:14:56,485 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:14:56,573 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:14:56,968 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:14:56,968 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:15:09,086 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:15:09,147 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:15:09,579 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:15:09,579 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:15:12,772 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:15:12,831 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:15:13,215 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:15:13,216 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:15:31,942 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:15:31] "GET /map/station_info/98 HTTP/1.1" 200 -
+2025-01-26 19:15:32,257 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:15:32] "GET /map/station_info/98 HTTP/1.1" 200 -
+2025-01-26 19:16:00,924 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:16:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-01-26 19:16:08,292 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:16:08,380 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:18:53,735 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 19:18:53,735 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 19:18:53,736 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:18:54,156 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:18:54,157 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:19:12,705 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:19:12] "[33mGET / HTTP/1.1[0m" 404 -
+2025-01-26 19:20:01,916 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:20:01,986 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:20:02,399 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:20:02,400 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:20:04,225 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:20:04,301 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:20:04,730 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:20:04,731 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:22:32,652 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/root.py', reloading
+2025-01-26 19:22:32,749 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:22:33,177 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:22:33,177 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:22:59,626 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:22:59,699 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:23:00,097 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:23:00,097 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:23:07,087 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:23:07,147 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:23:07,544 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:23:07,545 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:23:15,847 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:23:15,906 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:23:16,307 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:23:16,307 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:23:16,851 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:23:16,915 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:23:17,302 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:23:17,303 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:23:36,116 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/__init__.py', reloading
+2025-01-26 19:23:36,176 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:23:36,572 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:23:36,573 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:23:58,545 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:23:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 19:23:58,990 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:23:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-26 19:23:59,020 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:23:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:23:59,124 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:23:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 19:23:59,299 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:23:59] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=88RMt3R9te5gwbDwfATJ HTTP/1.1" 200 -
+2025-01-26 19:23:59,877 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:23:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 19:25:18,866 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:25:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 19:25:19,482 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:25:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:25:19,499 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:25:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-26 19:25:19,991 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:25:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=88RMt3R9te5gwbDwfATJ HTTP/1.1[0m" 304 -
+2025-01-26 19:25:20,009 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:25:20] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 19:25:20,369 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:25:20] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 19:26:00,044 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-01-26 19:26:00,219 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:00] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-26 19:26:00,222 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:00] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:26:00,387 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 19:26:00,530 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=88RMt3R9te5gwbDwfATJ HTTP/1.1[0m" 304 -
+2025-01-26 19:26:00,855 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:00] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-26 19:26:15,439 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:15] "GET / HTTP/1.1" 200 -
+2025-01-26 19:26:15,622 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:26:23,723 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:23] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:26:25,386 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:25] "GET /map/station_info/15 HTTP/1.1" 200 -
+2025-01-26 19:26:30,642 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:26:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:28:11,549 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:28:11] "GET /map/station_info/38 HTTP/1.1" 200 -
+2025-01-26 19:29:53,375 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:29:53] "GET /map/station_info/15 HTTP/1.1" 200 -
+2025-01-26 19:30:14,230 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:30:14] "GET /map/station_info/94 HTTP/1.1" 200 -
+2025-01-26 19:30:17,911 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:30:17] "GET / HTTP/1.1" 200 -
+2025-01-26 19:30:39,850 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:30:39] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 19:30:45,612 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:30:45] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 19:30:50,603 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:30:50] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:30:53,926 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:30:53] "GET /map/station_info/38 HTTP/1.1" 200 -
+2025-01-26 19:36:51,628 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:36:51] "GET /map/station_info/94 HTTP/1.1" 200 -
+2025-01-26 19:37:03,334 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:37:03] "GET / HTTP/1.1" 200 -
+2025-01-26 19:37:03,753 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:37:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:37:07,752 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 19:37:07,752 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 19:37:07,752 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:37:08,185 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:37:08,187 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:37:25,228 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:37:25] "GET / HTTP/1.1" 200 -
+2025-01-26 19:37:35,827 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:37:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:38:27,749 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:38:27] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:38:28,333 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:38:28] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:38:30,585 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:38:30] "GET /map/station_info/38 HTTP/1.1" 200 -
+2025-01-26 19:40:55,696 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:40:55,781 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:40:56,171 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:40:56,172 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:40:59,255 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:40:59,314 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:40:59,706 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:40:59,707 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:41:18,550 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:41:18] "GET /map/station_info/38 HTTP/1.1" 200 -
+2025-01-26 19:41:22,647 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/map.py', reloading
+2025-01-26 19:41:22,906 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 19:41:23,324 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 19:41:23,324 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 19:41:38,420 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:41:38] "GET /map/station_info/83 HTTP/1.1" 200 -
+2025-01-26 19:42:10,384 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:42:10] "GET / HTTP/1.1" 200 -
+2025-01-26 19:42:10,664 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:42:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:42:19,762 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:42:19] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:42:22,816 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:42:22] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:42:24,305 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:42:24] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:45:11,470 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:11] "GET / HTTP/1.1" 200 -
+2025-01-26 19:45:11,689 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:45:25,370 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:25] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:45:26,648 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:26] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:45:28,524 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:28] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:45:34,926 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:34] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:45:38,251 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:45:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:49:01,445 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:49:01] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:50:40,098 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:50:40] "GET / HTTP/1.1" 200 -
+2025-01-26 19:50:40,503 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:50:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:50:49,184 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:50:49] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:50:50,333 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:50:50] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:50:51,530 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:50:51] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:50:58,570 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:50:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:54:39,797 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:54:39] "GET / HTTP/1.1" 200 -
+2025-01-26 19:54:40,785 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:54:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:54:53,193 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:54:53] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:54:54,467 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:54:54] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 19:54:55,676 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:54:55] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:55:10,429 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:55:10] "GET /map/station_info/93 HTTP/1.1" 200 -
+2025-01-26 19:55:14,756 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:55:14] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 19:55:20,832 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:55:20] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 19:55:20,998 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:55:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 19:56:24,862 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:56:24] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 19:56:25,195 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 19:56:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:06:13,611 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:06:13] "GET / HTTP/1.1" 200 -
+2025-01-26 20:06:40,537 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:06:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:07:59,735 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:07:59] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:08:02,463 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:08:02] "GET /map/station_info/16 HTTP/1.1" 200 -
+2025-01-26 20:08:42,961 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:08:42] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:08:44,398 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:08:44] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 20:11:03,134 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:11:03] "[32mPOST /reviews/add_review HTTP/1.1[0m" 302 -
+2025-01-26 20:11:03,727 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:11:03] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:11:04,341 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:11:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:11:06,600 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:11:06] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 20:11:07,026 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:11:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:12:55,704 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:12:55] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:12:56,028 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:12:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:12:57,217 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:12:57] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 20:12:57,833 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:12:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:22:34,921 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 20:22:34,921 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 20:22:34,922 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 20:22:35,322 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 20:22:35,323 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 20:25:12,355 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:25:12] "GET / HTTP/1.1" 200 -
+2025-01-26 20:25:13,473 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:25:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:26:16,968 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:16] "GET / HTTP/1.1" 200 -
+2025-01-26 20:26:17,270 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:26:22,538 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:22] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:26:24,060 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:24] "GET /map/station_info/15 HTTP/1.1" 200 -
+2025-01-26 20:26:32,072 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:32] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:26:35,976 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:35] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:26:36,157 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:26:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:35:08,085 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-26 20:35:08,167 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 20:35:08,593 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 20:35:08,593 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 20:35:48,625 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 20:35:48,625 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 20:35:48,626 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 20:35:49,021 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 20:35:49,022 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 20:36:06,977 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:06] "GET / HTTP/1.1" 200 -
+2025-01-26 20:36:07,275 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:36:16,924 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:16] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:36:17,169 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:36:22,529 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:22] "GET / HTTP/1.1" 200 -
+2025-01-26 20:36:22,974 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:36:35,397 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:35] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:36:35,543 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:36:41,104 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:41] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 20:36:41,264 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:36:42,592 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:42] "GET / HTTP/1.1" 200 -
+2025-01-26 20:36:42,972 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:36:53,706 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:53] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:36:55,496 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:36:55] "GET /map/station_info/15 HTTP/1.1" 200 -
+2025-01-26 20:37:01,305 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:37:01] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 20:37:01,663 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:37:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:39:27,895 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:39:27] "GET / HTTP/1.1" 200 -
+2025-01-26 20:39:28,743 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:39:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:39:42,732 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:39:42] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:39:44,338 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:39:44] "GET /map/station_info/15 HTTP/1.1" 200 -
+2025-01-26 20:46:19,266 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 20:46:19,266 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 20:46:19,267 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 20:46:19,652 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 20:46:19,653 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 20:46:58,714 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:46:58] "GET / HTTP/1.1" 200 -
+2025-01-26 20:46:59,119 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:46:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:47:16,709 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:47:16] "GET /reviews/add_review?station_id=2115 HTTP/1.1" 200 -
+2025-01-26 20:47:16,960 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:47:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:47:22,097 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:47:22] "GET / HTTP/1.1" 200 -
+2025-01-26 20:47:22,290 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:47:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:47:29,497 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:47:29] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:48:00,271 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:48:00] "GET / HTTP/1.1" 200 -
+2025-01-26 20:48:00,510 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:48:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:48:09,673 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:48:09] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:48:11,041 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:48:11] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 20:48:25,147 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:48:25] "GET /reviews/add_review?station_id=1152 HTTP/1.1" 200 -
+2025-01-26 20:48:25,337 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:48:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:50:29,970 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:50:29] "GET / HTTP/1.1" 200 -
+2025-01-26 20:50:30,843 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:50:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:50:37,812 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:50:37] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 20:50:39,890 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:50:39] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 20:51:23,504 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:51:23] "GET /reviews/add_review?station_id=1222 HTTP/1.1" 200 -
+2025-01-26 20:51:23,856 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:51:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:56:04,218 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:56:04] "GET / HTTP/1.1" 200 -
+2025-01-26 20:56:15,312 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:56:15] "GET / HTTP/1.1" 200 -
+2025-01-26 20:56:20,788 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 20:56:20,789 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 20:56:20,789 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 20:56:21,190 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 20:56:21,191 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 20:56:41,323 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:56:41] "GET / HTTP/1.1" 200 -
+2025-01-26 20:56:41,806 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:56:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:56:56,911 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:56:56] "GET /reviews/add_review?station_id=2490 HTTP/1.1" 200 -
+2025-01-26 20:56:57,164 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:56:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 20:57:05,046 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:57:05] "GET /reviews/add_review?station_id=2490 HTTP/1.1" 200 -
+2025-01-26 20:57:05,284 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 20:57:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:00:00,383 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:00:00] "GET / HTTP/1.1" 200 -
+2025-01-26 21:00:20,850 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:00:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:00:46,444 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:00:46] "GET /reviews/add_review?station_id=2162 HTTP/1.1" 200 -
+2025-01-26 21:00:46,947 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:00:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:01:43,676 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:01:43] "GET /reviews/add_review?station_id=2162 HTTP/1.1" 200 -
+2025-01-26 21:01:46,106 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:01:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:01:52,945 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:01:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:02:21,804 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:02:21] "GET / HTTP/1.1" 200 -
+2025-01-26 21:02:29,424 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:02:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:02:46,887 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:02:46] "GET /reviews/add_review?station_id=1507 HTTP/1.1" 200 -
+2025-01-26 21:03:31,088 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:03:31] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 21:03:48,525 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:03:48] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 21:04:00,970 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:00] "[32mPOST /reviews/add_review HTTP/1.1[0m" 302 -
+2025-01-26 21:04:01,738 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:01] "GET /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 21:04:02,378 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:04:12,737 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:12] "GET / HTTP/1.1" 200 -
+2025-01-26 21:04:13,008 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:04:27,495 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:27] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 21:04:28,891 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:04:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:07:48,016 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:07:48] "GET / HTTP/1.1" 200 -
+2025-01-26 21:07:48,425 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:07:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:08:28,999 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:08:28] "GET / HTTP/1.1" 200 -
+2025-01-26 21:08:29,460 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:08:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:08:40,563 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:08:40] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 21:08:42,002 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:08:42] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 21:16:30,655 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.218:5000
+2025-01-26 21:16:30,655 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 21:16:30,656 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 21:16:31,124 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 21:16:31,125 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 21:16:48,663 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:16:48] "GET / HTTP/1.1" 200 -
+2025-01-26 21:16:49,985 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:16:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:17:05,613 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:17:05] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 21:17:06,928 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:17:06] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-26 21:17:07,879 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:17:07] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-26 21:17:10,863 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:17:10] "GET /reviews/add_review?station_id=86 HTTP/1.1" 200 -
+2025-01-26 21:17:11,223 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:17:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:18:15,993 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:15] "GET /reviews/add_review?station_id=86 HTTP/1.1" 200 -
+2025-01-26 21:18:16,228 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:18:20,534 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:20] "GET / HTTP/1.1" 200 -
+2025-01-26 21:18:20,759 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:18:44,878 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:44] "GET /reviews/add_review?station_id=86 HTTP/1.1" 200 -
+2025-01-26 21:18:45,230 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:18:49,813 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:49] "GET / HTTP/1.1" 200 -
+2025-01-26 21:18:50,549 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:18:50] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-26 21:22:04,115 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-26 21:22:04,195 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 21:22:04,588 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 21:22:04,588 - werkzeug - INFO -  * Debugger PIN: 110-701-008
+2025-01-26 21:22:08,685 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:08] "GET /reviews/add_review?station_id=86 HTTP/1.1" 200 -
+2025-01-26 21:22:08,913 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:22:18,767 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:18] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 21:22:33,771 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:33] "GET / HTTP/1.1" 200 -
+2025-01-26 21:22:34,383 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:22:41,034 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:41] "GET /reviews/add_review?station_id=null HTTP/1.1" 200 -
+2025-01-26 21:22:41,377 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:22:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:25:40,089 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:25:40] "GET / HTTP/1.1" 200 -
+2025-01-26 21:25:41,343 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:25:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:26:29,210 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:26:29] "GET /reviews/add_review?station_id=13 HTTP/1.1" 200 -
+2025-01-26 21:26:29,647 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:26:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:26:34,277 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:26:34] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-26 21:26:34,922 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:26:34] "GET / HTTP/1.1" 200 -
+2025-01-26 21:26:35,116 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:26:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:39:01,733 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:39:01] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-26 21:39:02,154 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:39:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 21:46:00,490 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:46:00] "GET / HTTP/1.1" 200 -
+2025-01-26 21:46:05,057 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 21:46:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

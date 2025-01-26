@@ -8,12 +8,25 @@
     Charging Stations Map
 </h1>
 
+<div id="search-section" class="search-section">
+    <input 
+        type="text" 
+        id="search-query" 
+        placeholder="Search by street name..." 
+        hx-post="{{ url_for('search.search_charging_station') }}"
+        hx-trigger="keyup changed delay:500ms" 
+        hx-target="#search-results" 
+        hx-swap="innerHTML"
+        name="query" 
+    >
+    <div id="search-results" class="search-results"></div>  <!-- Results will be inserted here --></div>
 <!-- Map Section -->
 <div id="map" style="height: 500px; margin-top: 20px;"></div>
 
 <!-- Selected Station Info -->
 <div id="selected-station-info" class="station-info mt-3">
     <h3>Selected Station</h3>
+    <input type="hidden" id="station-id" name="station_id">
     <p id="station-company">No station selected</p>
     <p id="station-name">No station selected</p>
     <p id="station-rating">Overall Rating: N/A</p>
@@ -129,6 +142,8 @@
     };
     legend.addTo(map);
 
+    var selectedStationId = null;  // Global variable to store selected station ID
+
     // Function to show charging stations within a polygon
     function showChargingStationsInPolygon(polygonLayer, bounds) {
         if (window.chargingStationLayer) {
@@ -166,6 +181,11 @@
                     document.getElementById('station-name').innerText = "Station Address: " + station.Address;
                     document.getElementById('station-rating').innerText = 'Rating: ' + (station.Rating || 'N/A');
                     document.getElementById('station-id').value = station.id;  // Set station ID for review form
+                    selectedStationId = station.id;  // Update the global variable
+                    localStorage.setItem('selectedStationId', station.id);  // Store the selected station ID
+
+                    // Scroll to the station info
+                    document.getElementById('selected-station-info').scrollIntoView({ behavior: 'smooth' });
                 });
                 return marker;
             })

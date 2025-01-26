@@ -1,17 +1,17 @@
 from app.repositories.base_repository import BaseRepository
 import json
 import pandas as pd
-
+from app import cache
 
 class MapRepository(BaseRepository):
     def get_geojson(self):
         with open('updated_output.geojson', 'r') as f:
             return json.load(f)
-
+        
     def  get_charging_stations(self):
     # Load the charging station dataset
-        df_lstat = pd.read_excel("app/datasets/Ladesaeulenregister_SEP.xlsx", header=10)
-        df_postcode = pd.read_csv("app/datasets/Postcode_BerlinDistricts.csv")
+        df_lstat = pd.read_excel("/workspaces/se_project/app/datasets/Ladesaeulenregister_SEP.xlsx", header=10)
+        df_postcode = pd.read_csv("/workspaces/se_project/app/datasets/Postcode_BerlinDistricts.csv")
 
         # Normalize the 'Ort' column and filter for Berlin
         df_lstat['Ort'] = df_lstat['Ort'].str.strip().str.lower()
@@ -58,24 +58,23 @@ class MapRepository(BaseRepository):
 
         # Convert to a list of dictionaries
         charging_stations = merged_df[['id', 'Name', 'Address','Ort', 'Latitude', 'Longitude', 'PLZ']].to_dict('records')
-
+        
         return charging_stations
+    
+    def get_cached_data(self):
+        geojson = cache.get('geojson')
+        charging_stations = cache.get('charging_stations')
+        if not geojson or not charging_stations:
+            geojson = self.get_geojson()
+            charging_stations = self.get_charging_stations()
+            cache.set('geojson', geojson)
+            cache.set('charging_stations', charging_stations)
+        return geojson, charging_stations
 
 
     # def get_station_by_id(self, station_id):
-    #     query = '''
-    #         SELECT id, Name, Address, Latitude, Longitude, PLZ
-    #         FROM charging_stations
-    #         WHERE id = ?
-    #     '''
-    #     result = self.fetchone(query, (station_id,))
-    #     if result:
-    #         return {
-    #             "id": result[0],
-    #             "Name": result[1],
-    #             "Address": result[2],
-    #             "Latitude": result[3],
-    #             "Longitude": result[4],
-    #             "PLZ": result[5]
-    #         }
-    #     return None
+
+        
+
+
+   

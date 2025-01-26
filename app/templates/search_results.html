@@ -5,14 +5,12 @@
 </div>
 {% endfor %}
 
+
 <script>
-
-
-    
- function selectStation(stationId) {
+function selectStation(stationId) {
     console.log("Selected Station ID:", stationId);  // Debug log
 
-    fetch(`/station_info/${stationId}`)
+    fetch(`/map/station_info/${stationId}`) 
         .then(response => {
             if (!response.ok) {
                 throw new Error('Station not found');
@@ -20,7 +18,7 @@
             return response.json();
         })
         .then(data => {
-            console.log("Station Data:", data);  // Debug log
+            console.log("Station Data1:", data);  // Debug log
 
             // Check if elements exist
             const stationNameElement = document.getElementById('station-name');
@@ -28,53 +26,19 @@
             const stationRatingElement = document.getElementById('station-rating');
             const stationIdElement = document.getElementById('station-id');
 
-            if (!stationNameElement || !stationCompanyElement || !stationRatingElement || !stationIdElement) {
-                throw new Error('One or more elements not found in the DOM');
+            if (stationNameElement && stationCompanyElement && stationRatingElement && stationIdElement) {
+                // Update the elements
+                stationCompanyElement.innerText = "Charging Station Company: " + data.Name;
+                stationNameElement.innerText = "Station Address: " + data.Address;  // Fix: Use data.Address
+                stationRatingElement.innerText = 'Rating: ' + (data.Rating || 'N/A');
+                stationIdElement.value = data.id;
+                localStorage.setItem('selectedStationId', data.id);  // Store the selected station ID
+
+                // Scroll to the station info
+                document.getElementById('selected-station-info').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error('One or more elements not found');
             }
-
-            // Update the elements
-            stationCompanyElement.innerText = "Charging Station Company: " + data.Name;
-            stationNameElement.innerText = "Station Address: " + data.Address;  // Fix: Use data.Address
-            stationRatingElement.innerText = 'Rating: ' + (data.Rating || 'N/A');
-            stationIdElement.value = data.id;
-
-           fetch(`/ratingAndReview/${stationId}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Failed to fetch reviews');
-                    }
-                    return response.json();
-                })
-                .then(reviews => {
-                    console.log("Reviews:", reviews);  // Debug log
-
-                    // Check if the reviews element exists
-                    const reviewsElement = document.getElementById('station-reviews');
-
-                    if (!reviewsElement) {
-                        throw new Error('Reviews element not found in the DOM');
-                    }
-
-                    // Clear the reviews element
-                    reviewsElement.innerHTML = '';
-
-                    // Add each review to the reviews element
-                    reviews.forEach(review => {
-                        const reviewElement = document.createElement('div');
-                        reviewElement.innerHTML = `
-                            <p><b>${review[0]}</b> - ${review[1]} stars</p>
-                            <p>Comment: ${review[2]}</p>
-                        `;
-                        reviewsElement.appendChild(reviewElement);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching reviews:', error);
-                });
-
-            // Clear the search results dropdown
-            document.getElementById('search-results').innerHTML = '';
-            document.getElementById('selected-station-info').scrollIntoView({ behavior: 'smooth' });
         })
         .catch(error => {
             console.error('Error:', error);
@@ -82,3 +46,4 @@
         });
 }
 </script>
+

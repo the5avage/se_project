@@ -10,7 +10,9 @@ def add_review_page():
     if 'user_id' not in session:
         flash("You must be logged in to add a review.")
         return redirect(url_for('auth.login'))
-    return render_template('add_review.html')
+    
+    station_id = request.args.get('station_id')
+    return render_template('add_review.html', station_id=station_id)
 
 @reviews_bp.route('/add_review', methods=['POST'])
 def add_review():
@@ -31,7 +33,12 @@ def add_review():
     review_repo.create_review(user_id=user_id, username=username, station_id=station_id, rating=rating, comment=comment)
 
     flash("Review added successfully!")
-    return redirect(url_for('reviews.add_review'))
+    return '''
+        <script>
+            localStorage.setItem('selectedStationId', null);
+            window.location.href = '/';
+        </script>
+    '''
 
 @reviews_bp.route('/user_reviews', methods=['GET'])
 def user_reviews():
