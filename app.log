@@ -1618,3 +1618,13 @@
 2025-01-26 16:31:04,470 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 16:31:04] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
 2025-01-26 16:31:04,877 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 16:31:04] "GET / HTTP/1.1" 200 -
 2025-01-26 16:31:04,888 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 16:31:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-26 18:08:23,881 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.20:5000
+2025-01-26 18:08:23,881 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-26 18:08:23,881 - werkzeug - INFO -  * Restarting with stat
+2025-01-26 18:08:24,435 - werkzeug - WARNING -  * Debugger is active!
+2025-01-26 18:08:24,447 - werkzeug - INFO -  * Debugger PIN: 303-961-215
+2025-01-26 18:08:56,356 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:08:56] "GET / HTTP/1.1" 200 -
+2025-01-26 18:08:56,405 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:08:56] "GET /static/style.css HTTP/1.1" 200 -
