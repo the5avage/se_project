@@ -16,6 +16,7 @@
     <h3>Selected Station</h3>
     <p id="station-company">No station selected</p>
     <p id="station-name">No station selected</p>
+    <p id="station-id">No station selected</p>
     <p id="station-rating">Overall Rating: N/A</p>
     <h4>Reviews:</h4>
     <ul id="station-reviews"></ul>
@@ -164,8 +165,8 @@
                     // Update selected station info
                     document.getElementById('station-company').innerText = "Charging Station Company: " + station.Name;
                     document.getElementById('station-name').innerText = "Station Address: " + station.Address;
+                    document.getElementById('station-id').innerText = "Station ID: " + station.id;  // Set station ID for review form
                     document.getElementById('station-rating').innerText = 'Rating: ' + (station.Rating || 'N/A');
-                    document.getElementById('station-id').value = station.id;  // Set station ID for review form
                 });
                 return marker;
             })

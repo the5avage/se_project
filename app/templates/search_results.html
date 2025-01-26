@@ -36,7 +36,7 @@
             stationCompanyElement.innerText = "Charging Station Company: " + data.Name;
             stationNameElement.innerText = "Station Address: " + data.Address;  // Fix: Use data.Address
             stationRatingElement.innerText = 'Rating: ' + (data.Rating || 'N/A');
-            stationIdElement.value = data.id;
+            stationIdElement.innerText = data.id;
 
            fetch(`/ratingAndReview/${stationId}`)
                 .then(response => {
