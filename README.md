@@ -14,10 +14,16 @@ source .venv/bin/activate  # On Linux
 pip install -r requirements.txt
 ```
 
-### 3. Start the Flask app:
+### 3. Run tests:
 
 ```shell
-python run.py
+pytest
 ```
 
-### 4. Open http://127.0.0.1:5000 in your browser
+### 4. Start the Flask app:
+
+```shell
+python app.py
+```
+
+### 5. Open http://127.0.0.1:5000 in your browser
