@@ -71,10 +71,9 @@ class ReviewRepository(BaseRepository):
             {
                 "rating_id": row[0],
                 "user_id": row[1],
-                "station_id": row[2],
-                "station_ranking": row[3],
-                "comment": row[4]
-                
+                "station_id": row[3],
+                "station_ranking": row[4],
+                "comment": row[5]
             }
             for row in results
         ]
