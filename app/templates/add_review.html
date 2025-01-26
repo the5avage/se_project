@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Review{% endblock %}
+
+{% block content %}
+<h1 class="text-center" style="margin-top: 20px; color: #4CAF50;">Add a Review</h1>
+
+<!-- Flash Message -->
+<div id="flash-messages" style="max-width: 600px; margin: 20px auto;">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-info" role="alert">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+    {% endwith %}
+</div>
+
+<!-- Add Review Form -->
+<form method="post" action="{{ url_for('reviews.add_review') }}" 
+      style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="form-group" style="margin-bottom: 15px;">
+        <label for="station-id" style="font-weight: bold;">Station ID:</label>
+        <input type="text" id="station-id" name="station_id" class="form-control" placeholder="Enter Station ID" required>
+    </div>
+    <div class="form-group" style="margin-bottom: 15px;">
+        <label for="rating" style="font-weight: bold;">Rating:</label>
+        <select id="rating" name="rating" class="form-control" required>
+            <option value="" disabled selected>Select Rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Terrible</option>
+        </select>
+    </div>
+    <div class="form-group" style="margin-bottom: 15px;">
+        <label for="comment" style="font-weight: bold;">Review:</label>
+        <textarea id="comment" name="comment" class="form-control" rows="5" placeholder="Write your review..." required></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-success" style="width: 100%; font-size: 16px;">Submit Review</button>
+    </div>
+</form>
+{% endblock %}
