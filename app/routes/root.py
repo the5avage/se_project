@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from app.repositories.map_repository import MapRepository
+from app.domains.repositories.map_repository import MapRepository
 
 root_bp = Blueprint("root", __name__)
 map_repo = MapRepository()

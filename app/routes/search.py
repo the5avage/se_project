@@ -1,5 +1,5 @@
 from flask import Blueprint, request,  render_template
-from app.repositories.map_repository import MapRepository
+from app.domains.repositories.map_repository import MapRepository
 
 search_bp = Blueprint('search', __name__)
 map_repo = MapRepository()

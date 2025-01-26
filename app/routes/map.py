@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, jsonify, request
-from app.repositories.map_repository import MapRepository
-from app.repositories.review_repository import ReviewRepository
+from app.domains.repositories.map_repository import MapRepository
+from app.domains.repositories.review_repository import ReviewRepository
 
 
 map_bp = Blueprint("map", __name__)
