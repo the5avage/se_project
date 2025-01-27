@@ -68,13 +68,33 @@ class ReviewRepository(BaseRepository):
         results = self.fetchall(query, (username,))
         print("rseults:", results)
         return [
-            {
-                "rating_id": row[0],
-                "user_id": row[1],
-                "station_id": row[3],
-                "station_ranking": row[4],
-                "comment": row[5]
+            {   "review_id": row[0],
+                "station_id": row[2],
+                "station_ranking": row[3],
+                "comment": row[4]
             }
             for row in results
         ]
+
+    def delete_review_by_id(self, review_id):
+        """
+        Deletes a review by its ID from the database.
+        """
+        query = '''
+            DELETE FROM reviews
+            WHERE id = ?
+        '''
+        self.execute(query, (review_id,))
+
+    def update_review(self, review_id, station_id, rating, comment):
+        """
+        Updates an existing review in the database.
+        """
+        query = '''
+            UPDATE reviews
+            SET station_id = ?, rating = ?, comment = ?
+            WHERE id = ?
+        '''
+        self.execute(query, (station_id, rating, comment, review_id))
+
 

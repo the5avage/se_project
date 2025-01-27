@@ -47,7 +47,8 @@
         }
     </style>
 
-<form method="post" action="{{ url_for('auth.login') }}">
+<h1>Login</h1>
+<form class="login-container" method="post" action="{{ url_for('auth.login') }}">
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit">Login</button>

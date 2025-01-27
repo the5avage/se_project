@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, jsonify, request
+from flask import Blueprint, jsonify
 from app.domains.repositories.map_repository import MapRepository
 from app.domains.repositories.review_repository import ReviewRepository
 

@@ -31,3 +31,10 @@ class UserReviewsAccessed(ReviewEvent):
 
     def __repr__(self):
         return f"<UserReviewsAccessed username={self.username}>"
+
+class ReviewDeleted(ReviewEvent):
+    def __init__(self, review_id):
+        self.review_id = review_id
+
+    def __repr__(self):
+        return f"<ReviewDeleted review_id={self.review_id}>"

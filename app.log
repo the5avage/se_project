@@ -1628,3 +1628,467 @@
 2025-01-26 18:08:24,447 - werkzeug - INFO -  * Debugger PIN: 303-961-215
 2025-01-26 18:08:56,356 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:08:56] "GET / HTTP/1.1" 200 -
 2025-01-26 18:08:56,405 - werkzeug - INFO - 127.0.0.1 - - [26/Jan/2025 18:08:56] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-27 20:52:07,789 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.22:5000
+2025-01-27 20:52:07,790 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:52:07,791 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 20:52:18,051 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 20:52:18,269 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 20:52:36,420 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 20:52:36] "GET / HTTP/1.1" 200 -
+2025-01-27 20:52:36,441 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 20:52:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:52:41,104 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 20:52:41] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 20:52:41,120 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 20:52:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:59:50,120 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/reviews.py', reloading
+2025-01-27 20:59:50,311 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:00:02,004 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:00:02,218 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:00:02,253 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:00:02] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:00:02,314 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:00:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:31,637 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:31] "GET /reviews/add_review?station_id=132 HTTP/1.1" 200 -
+2025-01-27 21:03:31,651 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:37,577 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:37] "GET / HTTP/1.1" 200 -
+2025-01-27 21:03:37,594 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:43,028 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:43] "GET /reviews/add_review?station_id=132 HTTP/1.1" 200 -
+2025-01-27 21:03:43,039 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:49,714 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:49] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:03:49,725 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:51,566 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:51] "GET /reviews/add_review?station_id=132 HTTP/1.1" 200 -
+2025-01-27 21:03:51,580 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:53,604 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:53] "GET / HTTP/1.1" 200 -
+2025-01-27 21:03:53,613 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:03:57,025 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:57] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:03:58,918 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:03:58] "GET /map/station_info/11 HTTP/1.1" 200 -
+2025-01-27 21:04:03,293 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:04:03] "GET /reviews/add_review?station_id=11 HTTP/1.1" 200 -
+2025-01-27 21:04:03,304 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:04:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:04:15,199 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:04:15] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-27 21:04:15,580 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:04:15] "GET / HTTP/1.1" 200 -
+2025-01-27 21:04:15,591 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:04:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:05:24,975 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:05:24] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:05:24,994 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:05:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:06:15,983 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:06:16,086 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:06:26,284 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:06:26,511 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:07:01,046 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:07:01] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:07:01,059 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:07:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:08:51,250 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:08:51,392 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:09:01,532 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:09:01,737 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:09:01,772 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:01] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:09:01,787 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:09:37,103 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:37] "GET / HTTP/1.1" 200 -
+2025-01-27 21:09:37,113 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:09:43,580 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:43] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:09:45,265 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:45] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:09:46,792 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:46] "GET /map/station_info/35 HTTP/1.1" 200 -
+2025-01-27 21:09:51,441 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:51] "GET /reviews/add_review?station_id=35 HTTP/1.1" 200 -
+2025-01-27 21:09:51,452 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:09:54,295 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:54] "GET / HTTP/1.1" 200 -
+2025-01-27 21:09:54,306 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:09:56,753 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:56] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:09:58,611 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:09:58] "GET /map/station_info/32 HTTP/1.1" 200 -
+2025-01-27 21:10:01,645 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:01] "GET /reviews/add_review?station_id=32 HTTP/1.1" 200 -
+2025-01-27 21:10:01,657 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:10:10,911 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:10] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-27 21:10:11,274 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:11] "GET / HTTP/1.1" 200 -
+2025-01-27 21:10:11,284 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:10:14,713 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:14] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:10:14,723 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:10:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:12:07,467 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.22:5000
+2025-01-27 21:12:07,467 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:12:07,468 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:12:17,481 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:12:17,688 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:12:18,140 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:12:18] "GET / HTTP/1.1" 200 -
+2025-01-27 21:12:18,159 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:12:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:12:23,983 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:12:23] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:12:23,995 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:12:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:17:46,338 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:17:46,455 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:17:56,473 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:17:56,685 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:18:12,483 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/events/review_events.py', reloading
+2025-01-27 21:18:12,591 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:18:22,972 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:18:23,214 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:18:29,546 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/reviews.py', reloading
+2025-01-27 21:18:29,658 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:18:39,850 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:18:39,880 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:18:39,934 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:18:39] "[35m[1mGET /reviews/user_reviews HTTP/1.1[0m" 500 -
+2025-01-27 21:18:39,949 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:18:39] "[36mGET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:18:39,950 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:18:39] "[36mGET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:18:39,967 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:18:39] "GET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=console.png&s=6iX5bkJvW8LRj4Y5LLeg HTTP/1.1" 200 -
+2025-01-27 21:18:39,976 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:18:39] "[36mGET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-27 21:19:40,471 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:19:40,581 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:19:50,787 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:19:50,995 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:19:54,180 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:19:54] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:19:54,197 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:19:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:20:26,754 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:26] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:20:26,762 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:20:28,621 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:28] "[35m[1mPOST /reviews/delete_review/57 HTTP/1.1[0m" 500 -
+2025-01-27 21:20:28,635 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:28] "GET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 21:20:28,635 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:28] "GET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 21:20:28,642 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:28] "GET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=console.png&s=b9vTHrFNisitWVgQgQ8v HTTP/1.1" 200 -
+2025-01-27 21:20:28,646 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:28] "GET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-27 21:21:15,980 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/events/review_events.py', reloading
+2025-01-27 21:21:16,121 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:21:26,068 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:21:26,285 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:21:26,316 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:26] "[35m[1mPOST /reviews/delete_review/57 HTTP/1.1[0m" 500 -
+2025-01-27 21:21:26,330 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:26] "[36mGET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:21:26,331 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:26] "[36mGET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:21:26,337 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:26] "GET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=console.png&s=4H8LtZhVqS3h0LiMvCJY HTTP/1.1" 200 -
+2025-01-27 21:21:26,343 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:26] "[36mGET /reviews/delete_review/57?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-27 21:21:32,439 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:32] "GET / HTTP/1.1" 200 -
+2025-01-27 21:21:32,450 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:21:34,529 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:34] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:21:34,539 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:21:36,159 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:36] "[35m[1mPOST /reviews/delete_review/58 HTTP/1.1[0m" 500 -
+2025-01-27 21:21:36,168 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:36] "GET /reviews/delete_review/58?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 21:21:36,172 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:36] "GET /reviews/delete_review/58?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 21:21:36,180 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:36] "GET /reviews/delete_review/58?__debugger__=yes&cmd=resource&f=console.png&s=4H8LtZhVqS3h0LiMvCJY HTTP/1.1" 200 -
+2025-01-27 21:21:36,188 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:36] "GET /reviews/delete_review/58?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-27 21:21:47,336 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:47] "GET / HTTP/1.1" 200 -
+2025-01-27 21:21:47,350 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:21:48,932 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:48] "GET / HTTP/1.1" 200 -
+2025-01-27 21:21:48,947 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:21:51,388 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:51] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:21:51,399 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:21:52,789 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:52] "[35m[1mPOST /reviews/delete_review/59 HTTP/1.1[0m" 500 -
+2025-01-27 21:21:52,813 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:52] "GET /reviews/delete_review/59?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 21:21:52,815 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:52] "GET /reviews/delete_review/59?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 21:21:52,827 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:52] "GET /reviews/delete_review/59?__debugger__=yes&cmd=resource&f=console.png&s=4H8LtZhVqS3h0LiMvCJY HTTP/1.1" 200 -
+2025-01-27 21:21:52,844 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:52] "GET /reviews/delete_review/59?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-27 21:23:53,165 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/reviews.py', reloading
+2025-01-27 21:23:53,314 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:24:04,466 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:24:04,495 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:24:04,929 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:04] "GET / HTTP/1.1" 200 -
+2025-01-27 21:24:04,944 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:06,526 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:06] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:24:06,538 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:12,259 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:12] "GET / HTTP/1.1" 200 -
+2025-01-27 21:24:12,270 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:17,627 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:17] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:24:18,999 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:18] "GET /map/station_info/18 HTTP/1.1" 200 -
+2025-01-27 21:24:22,406 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:22] "GET /reviews/add_review?station_id=18 HTTP/1.1" 200 -
+2025-01-27 21:24:22,419 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:38,258 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:38] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-27 21:24:38,674 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:38] "GET / HTTP/1.1" 200 -
+2025-01-27 21:24:38,687 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:40,512 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:40] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:24:40,523 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:42,039 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:42] "[32mPOST /reviews/delete_review/60 HTTP/1.1[0m" 302 -
+2025-01-27 21:24:42,045 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:42] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:24:42,059 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:47,194 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:47] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:24:47,206 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:32:37,913 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:37] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:32:37,927 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:32:53,485 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:53] "GET / HTTP/1.1" 200 -
+2025-01-27 21:32:53,499 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:32:56,790 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:56] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:32:58,739 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:58] "GET /map/station_info/11 HTTP/1.1" 200 -
+2025-01-27 21:33:01,967 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:01] "GET /reviews/add_review?station_id=11 HTTP/1.1" 200 -
+2025-01-27 21:33:01,985 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:33:13,418 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:13] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-27 21:33:13,760 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:13] "GET / HTTP/1.1" 200 -
+2025-01-27 21:33:13,771 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:33:15,321 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:15] "[35m[1mGET /reviews/user_reviews HTTP/1.1[0m" 500 -
+2025-01-27 21:33:15,332 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:15] "[36mGET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:33:15,332 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:15] "[36mGET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:33:15,339 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:15] "GET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=console.png&s=h9LilOL8oBufJNSI18ip HTTP/1.1" 200 -
+2025-01-27 21:33:15,352 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:15] "[36mGET /reviews/user_reviews?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-27 21:35:00,495 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/reviews.py', reloading
+2025-01-27 21:35:00,609 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:35:11,424 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:35:11,640 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:35:52,545 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:35:52,685 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:36:03,119 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:36:03,327 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:38:43,568 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/reviews.py', reloading
+2025-01-27 21:38:43,686 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:38:54,323 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:38:54,530 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:39:07,173 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:39:07,285 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:39:17,178 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:39:17,208 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:39:17,612 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:39:17] "GET / HTTP/1.1" 200 -
+2025-01-27 21:39:17,628 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:39:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:39:19,577 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:39:19] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:39:19,588 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:39:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:41:12,835 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:12] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:41:12,861 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:41:18,445 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:18] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:41:18,459 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:41:19,869 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:19] "GET / HTTP/1.1" 200 -
+2025-01-27 21:41:19,882 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:41:22,263 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:22] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:41:22,283 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:41:27,535 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:41:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:43:15,914 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:15] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:43:15,934 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:43:27,713 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:27] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:43:27,722 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:27] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:43:27,738 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:43:34,000 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:34] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:43:34,013 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:43:35,526 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:35] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:43:35,537 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:43:43,783 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:43] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:43:43,794 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:43] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:43:43,811 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:43:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:45:00,263 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/reviews.py', reloading
+2025-01-27 21:45:00,368 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:45:14,433 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:45:14,665 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:45:29,399 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-27 21:45:29,497 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 21:45:39,414 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 21:45:39,444 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 21:48:37,830 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:37] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:48:37,845 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:48:51,915 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:51] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:48:51,926 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:48:57,952 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:57] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:48:57,958 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:57] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:48:57,971 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:48:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:49:23,375 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:23] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:49:23,389 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:49:26,207 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:26] "[32mPOST /reviews/delete_review/61 HTTP/1.1[0m" 302 -
+2025-01-27 21:49:26,220 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:26] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:49:26,243 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:49:32,462 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:32] "GET / HTTP/1.1" 200 -
+2025-01-27 21:49:32,500 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:49:35,566 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:35] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 21:49:37,147 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:37] "GET /map/station_info/7 HTTP/1.1" 200 -
+2025-01-27 21:49:41,424 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:41] "GET /reviews/add_review?station_id=7 HTTP/1.1" 200 -
+2025-01-27 21:49:41,471 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:49:47,511 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:47] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-27 21:49:47,898 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:47] "GET / HTTP/1.1" 200 -
+2025-01-27 21:49:47,913 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:49:49,627 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:49] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:49:49,681 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:49:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:51:12,692 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:51:12] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:51:12,707 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:51:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:51:35,648 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:51:35] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:51:35,652 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:51:35] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:51:35,666 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:51:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:52:15,813 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:15] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:52:15,820 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:15] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:52:15,842 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:54:08,053 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:08] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:54:08,060 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:08] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:54:08,079 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:54:18,413 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:18] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:54:18,424 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:54:20,858 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:20] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:54:20,868 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:20] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:54:20,886 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:55:09,867 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:55:09] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:55:09,883 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:55:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:55:59,053 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:55:59] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:55:59,068 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:55:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:56:04,848 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:56:04] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:56:04,856 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:56:04] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:56:04,870 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:56:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:56:35,432 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:56:35] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:56:35,448 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:56:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:58:04,712 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:04] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:58:04,727 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:58:09,993 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:09] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:58:10,011 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:10] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:58:10,032 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:58:39,708 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:39] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:58:39,724 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:58:43,992 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:43] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:58:43,999 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:43] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:58:44,012 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:59:03,106 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:03] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:59:03,118 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:59:08,614 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:08] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 21:59:08,622 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:08] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:59:08,638 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:59:37,803 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:37] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 21:59:37,822 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 21:59:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:02:14,833 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:14] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:02:14,849 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:02:42,472 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:42] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:02:42,485 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:02:46,396 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:46] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:02:46,407 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:46] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:02:46,425 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:02:51,383 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:51] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:02:51,387 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:51] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:02:51,400 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:02:55,894 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:55] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:02:55,903 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:55] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:02:55,918 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:02:59,919 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:59] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:02:59,930 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:59] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:02:59,947 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:02:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:05:11,439 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:11] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-01-27 22:05:20,943 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:20] "GET / HTTP/1.1" 200 -
+2025-01-27 22:05:20,956 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:05:22,830 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:22] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:05:22,849 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:05:24,470 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:24] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:05:24,483 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:05:25,938 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:25] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:05:25,955 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:05:27,696 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:27] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:05:27,707 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:05:31,441 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:31] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:05:31,458 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:05:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:15,325 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:15] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:06:15,340 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:18,204 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:18] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:06:18,219 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:36,862 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:36] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:06:36,872 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:39,740 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:39] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:06:39,757 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:41,743 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:41] "GET / HTTP/1.1" 200 -
+2025-01-27 22:06:41,757 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:42,612 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:42] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:06:42,626 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:06:44,616 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:44] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:06:44,624 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:06:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:07:14,894 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:14] "GET /auth/register HTTP/1.1" 200 -
+2025-01-27 22:07:14,910 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:07:16,398 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:16] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:07:16,415 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:07:21,178 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:21] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-27 22:07:21,524 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:21] "GET / HTTP/1.1" 200 -
+2025-01-27 22:07:21,540 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:07:23,110 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:23] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:07:23,124 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:07:39,169 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:39] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:07:39,182 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:07:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:08:46,079 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:08:46] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:08:46,083 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:08:46] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:08:46,094 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:08:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:08:54,366 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:08:54] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:08:54,375 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:08:54] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:08:54,392 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:08:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:09:49,955 - werkzeug - INFO -  * Detected change in '/Users/shadi/Downloads/Software Project/se_project/app/routes/map.py', reloading
+2025-01-27 22:09:50,060 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 22:10:00,543 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 22:10:00,748 - werkzeug - INFO -  * Debugger PIN: 127-906-332
+2025-01-27 22:10:16,328 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:10:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:11:14,340 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:14] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:11:14,351 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:11:19,849 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:19] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:11:19,857 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:19] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:11:19,872 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:11:54,618 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:54] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:11:54,633 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:11:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:12:06,925 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:12:06] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:12:06,943 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:12:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:12:43,534 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:12:43] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:12:43,548 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:12:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:26,428 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:26] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:14:26,439 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:26] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:14:26,459 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:27,844 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:27] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:14:27,859 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:31,372 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:31] "GET / HTTP/1.1" 200 -
+2025-01-27 22:14:31,408 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:32,224 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:32] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:14:32,271 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:40,124 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:40] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:14:40,134 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:40] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:14:40,152 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:43,501 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:43] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+2025-01-27 22:14:43,860 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:43] "GET / HTTP/1.1" 200 -
+2025-01-27 22:14:43,910 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:45,417 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:45] "GET /auth/login HTTP/1.1" 200 -
+2025-01-27 22:14:45,475 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:48,257 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:48] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-27 22:14:48,592 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:48] "GET / HTTP/1.1" 200 -
+2025-01-27 22:14:48,666 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:49,668 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:49] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:14:49,747 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:15:56,919 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:56] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:15:56,934 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:17:04,922 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:04] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:17:04,950 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:17:31,002 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:31] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:17:31,012 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:17:49,828 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:49] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:17:49,841 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:17:56,648 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:19:05,581 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:19:05] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:19:05,593 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:19:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:19:39,839 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:19:39] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:19:39,851 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:19:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:21:22,700 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:21:22] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:21:22,714 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:21:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:21:44,601 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:21:44] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:21:44,616 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:21:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:23:18,326 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:23:18] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:23:18,339 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:23:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:23:45,718 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:23:45] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:23:45,730 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:23:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:24:10,490 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:24:10] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:24:10,502 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:24:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:25:12,394 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:12] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:25:12,408 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:25:25,731 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:25:49,388 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:49] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:25:49,406 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:25:58,660 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:58] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:25:58,669 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:58] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:25:58,685 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:26:37,376 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:26:37] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-27 22:26:37,383 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:26:37] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:26:37,397 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:26:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:26:46,622 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:26:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:29:01,995 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:29:01] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:29:02,012 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:29:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:35:49,435 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:35:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:35:58,048 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:35:58] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:35:58,062 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:35:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:36:00,438 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:00] "[32mPOST /reviews/delete_review/32 HTTP/1.1[0m" 302 -
+2025-01-27 22:36:00,444 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:00] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:36:00,462 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:36:18,655 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:18] "GET / HTTP/1.1" 200 -
+2025-01-27 22:36:18,671 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:36:23,846 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:23] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:25,154 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:25] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:26,669 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:26] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:28,540 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:28] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:31,300 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:31] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:34,621 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:34] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:35,885 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:35] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:37,519 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:37] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:36:39,903 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:36:39] "GET /map/station_info/132 HTTP/1.1" 200 -
+2025-01-27 22:37:05,367 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:37:05] "GET /reviews/add_review?station_id=579 HTTP/1.1" 200 -
+2025-01-27 22:37:05,424 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:37:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:37:58,864 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:37:58] "GET / HTTP/1.1" 200 -
+2025-01-27 22:37:58,936 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:37:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:38:02,494 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:02] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:38:04,565 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:04] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:38:05,513 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:05] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-27 22:38:14,022 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:14] "GET /map/station_info/11 HTTP/1.1" 200 -
+2025-01-27 22:38:34,171 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:34] "GET /reviews/add_review?station_id=11 HTTP/1.1" 200 -
+2025-01-27 22:38:34,213 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:38:45,888 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:45] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-27 22:38:46,337 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:46] "GET / HTTP/1.1" 200 -
+2025-01-27 22:38:46,350 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:38:47,904 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:47] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:38:47,960 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:38:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:40:55,836 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:40:55] "[32mPOST /reviews/delete_review/56 HTTP/1.1[0m" 302 -
+2025-01-27 22:40:55,845 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:40:55] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-27 22:40:55,863 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:40:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

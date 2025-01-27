@@ -3,31 +3,65 @@
 {% block title %}My Reviews{% endblock %}
 
 {% block content %}
+<style>
+    .edit-section {
+        display: flex;
+        margin: 0 5px;
+    }
+
+    @media (max-width: 860px) {
+        .edit-section {
+            flex-flow:column; 
+        }
+    }
+</style>
 
 <h1 class="text-center" style="margin-top: 20px; color: #4CAF50;">My Reviews</h1>
 
 <div style="max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     {% if reviews %}
-        <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff;">
-            <thead style="background-color: #4CAF50; color: white; text-align: center;">
-                <tr>
-                    <th style="padding: 12px 15px; border: 1px solid #ddd;">#</th>
-                    <th style="padding: 12px 15px; border: 1px solid #ddd;">Station ID</th>
-                    <th style="padding: 12px 15px; border: 1px solid #ddd;">Rating</th>
-                    <th style="padding: 12px 15px; border: 1px solid #ddd;">Comment</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for review in reviews %}
-                    <tr style="background-color: {% if loop.index is odd %} #f2f2f2 {% else %} #fff {% endif %};">
-                        <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ loop.index }}</td>
-                        <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ review.station_id }}</td>
-                        <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ review.station_ranking }}</td>
-                        <td style="padding: 12px 15px; border: 1px solid #ddd;">{{ review.comment }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff;">
+        <thead style="background-color: #4CAF50; color: white; text-align: center;">
+            <tr>
+                <th style="padding: 12px 15px; border: 1px solid #ddd;">#</th>
+                <th style="padding: 12px 15px; border: 1px solid #ddd;">Station ID</th>
+                <th style="padding: 12px 15px; border: 1px solid #ddd;">Rating</th>
+                <th style="padding: 12px 15px; border: 1px solid #ddd;">Comment</th>
+                <th style="padding: 12px 15px; border: 1px solid #ddd;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for review in reviews %}
+            <tr id="review-row-{{ review.review_id }}" style="background-color: {% if loop.index is odd %} #f2f2f2 {% else %} #fff {% endif %};">
+                <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ loop.index }}</td>
+                <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;">{{ review.station_id }}</td>
+                <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center;" id="rating-{{ review.review_id }}">
+                    <span>{{ review.station_ranking }}</span>
+                </td>
+                <td style="padding: 12px 15px; border: 1px solid #ddd;" id="comment-{{ review.review_id }}">
+                    <span>{{ review.comment }}</span>
+                    
+                </td>
+                <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center; display: flex;">
+                    <!-- Delete Button -->
+                    <form action="{{ url_for('reviews.delete_review', review_id=review.review_id) }}" method="POST" style="display:inline;">
+                        <button type="submit" style="background-color: #e74c3c; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Delete</button>
+                    </form>
+                    <!-- Edit Button -->
+                    <button onclick="toggleEditMode({{ review.review_id }})" class="edit-btn" style="background-color: #3498db; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; margin-left: 10px;">Edit</button>
+                    <!-- Save Button -->
+                    <form class="edit-section" id="edit-form-{{ review.review_id }}" action="{{ url_for('reviews.edit_review') }}" method="POST">
+                        <input type="hidden" name="review_id"  value="{{ review.review_id }}">
+                        <input type="hidden" name="station_id" value="{{ review.station_id }}"  style="margin: 0 5px;">
+                        <input class="edit-mode" type="number" name="rating" value="{{ review.station_ranking }}" style="display:none;">
+                        <textarea class="edit-mode" name="comment" rows="1" style="display:none;">{{ review.comment }}</textarea>
+                        <button type="submit" class="save-btn" style="background-color: #2ecc71; color: white; border: none; padding: 5px 10px; border-radius: 5px; display: none;">Save</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
     {% else %}
         <p style="text-align: center; font-size: 1.2rem; color: #777; font-style: italic;">No reviews found.</p>
     {% endif %}
@@ -35,4 +69,22 @@
 
 {% endblock %}
 
+{% block scripts %}
+<script>
+    function toggleEditMode(reviewId) {
+        const row = document.getElementById(`review-row-${reviewId}`);
+        const viewModeElements = row.querySelectorAll('.view-mode');
+        const editModeElements = row.querySelectorAll('.edit-mode');
+        const editButton = row.querySelector('.edit-btn');
+        const saveButton = row.querySelector('.save-btn');
 
+        // Toggle visibility of view and edit modes
+        viewModeElements.forEach(el => el.style.display = el.style.display === 'none' ? '' : 'none');
+        editModeElements.forEach(el => el.style.display = el.style.display === 'none' ? '' : 'block');
+
+        // Toggle visibility of buttons
+        editButton.style.display = editButton.style.display === 'none' ? '' : 'none';
+        saveButton.style.display = saveButton.style.display === 'none' ? '' : 'inline-block';
+    }
+</script>
+{% endblock %}
