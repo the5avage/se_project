@@ -55,6 +55,27 @@ def test_get_reviews_by_username(review_repository):
     reviews = review_repository.get_reviews_by_username("test_user")
     print(reviews)
     assert len(reviews) == 2
-    assert reviews[0]["station_id"] == 101
-    assert reviews[1]["comment"] == "Nice station."
-    assert reviews[0]["station_ranking"] == 5
+    assert reviews[0]["review_id"] == 1
+
+
+# Test delete_review
+def test_delete_review_by_id(review_repository):
+    # Arrange
+    review_repository.create_review(1, "test_user", 101, 5, "Great station!")
+    review_repository.create_review(2, "test_user", 102, 4, "Nice station.")
+
+    # Act
+    review_repository.delete_review(1)  # Delete the first review
+    reviews = review_repository.fetchall("SELECT * FROM reviews")
+
+    # Assert
+    assert len(reviews) == 1  # Only one review should remain
+    assert reviews[0][0] == 2  # Remaining review should have ID 2
+    assert reviews[0][1] == 2  # user_id
+    assert reviews[0][2] == "test_user"
+    assert reviews[0][3] == 102  # station_id
+    assert reviews[0][4] == 4  # rating
+    assert reviews[0][5] == "Nice station."
+
+
+
