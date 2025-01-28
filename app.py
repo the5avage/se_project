@@ -1,7 +1,7 @@
 import os
 import logging
 from app import create_app
-from app.domains.entities.db import init_db  # Import your database initialization function
+from db import init_db  # Import your database initialization function
 from app.domains.events.map_events import get_cached_data
 
 # Initialize the Flask app
