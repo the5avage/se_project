@@ -104,6 +104,12 @@ def edit_review():
     flash("Review updated successfully!")
     return redirect(url_for('reviews.user_reviews'))
 
+@reviews_bp.route('/get_StationReviews/<int:station_id>', methods=['GET'])
+def get_StationReviews(station_id):
+    reviews = review_repo.get_reviews_by_station(station_id)
+    result = [{'username': review.username, 'comment': review.comment, 'rating': review.rating} for review in reviews]
+    return {'reviews': result}
+
 
 
 

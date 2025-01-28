@@ -18,6 +18,12 @@
 
     <!-- Allow additional head content -->
     {% block head %}{% endblock %}
+    <script>
+        // Set selectedStationId to null on page load
+        window.onload = function() {
+            localStorage.setItem('selectedStationId', 'null');
+        };
+    </script>
 </head>
 <body>
     <!-- Navigation Bar -->

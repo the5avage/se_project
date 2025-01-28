@@ -2092,3 +2092,350 @@
 2025-01-27 22:40:55,836 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:40:55] "[32mPOST /reviews/delete_review/56 HTTP/1.1[0m" 302 -
 2025-01-27 22:40:55,845 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:40:55] "GET /reviews/user_reviews HTTP/1.1" 200 -
 2025-01-27 22:40:55,863 - werkzeug - INFO - 127.0.0.1 - - [27/Jan/2025 22:40:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:55:28,907 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.164:5000
+2025-01-28 06:55:28,907 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 06:55:28,909 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 06:55:43,631 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 06:55:43,658 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 06:55:46,619 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:55:46] "GET / HTTP/1.1" 200 -
+2025-01-28 06:55:47,079 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:55:47] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-28 06:55:52,047 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:55:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-28 06:56:00,181 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:00] "GET /auth/login HTTP/1.1" 200 -
+2025-01-28 06:56:00,602 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:56:04,517 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:04] "GET /auth/register HTTP/1.1" 200 -
+2025-01-28 06:56:04,723 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:56:07,139 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:07] "GET /auth/login HTTP/1.1" 200 -
+2025-01-28 06:56:07,499 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:56:16,433 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:16] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-28 06:56:16,552 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:16] "GET /auth/login HTTP/1.1" 200 -
+2025-01-28 06:56:16,708 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:56:51,477 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:51] "GET /auth/register HTTP/1.1" 200 -
+2025-01-28 06:56:51,762 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:56:59,320 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:56:59] "POST /auth/register HTTP/1.1" 200 -
+2025-01-28 06:57:01,643 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:01] "GET /auth/login HTTP/1.1" 200 -
+2025-01-28 06:57:02,043 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:57:09,339 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:09] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2025-01-28 06:57:10,204 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:10] "GET / HTTP/1.1" 200 -
+2025-01-28 06:57:10,491 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:57:32,484 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:32] "GET /reviews/add_review?station_id=1909 HTTP/1.1" 200 -
+2025-01-28 06:57:32,716 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:57:53,278 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:53] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-28 06:57:53,987 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:53] "GET / HTTP/1.1" 200 -
+2025-01-28 06:57:54,175 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:57:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:58:00,829 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:00] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 06:58:01,041 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:58:06,154 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:06] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-28 06:58:06,300 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:06] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 06:58:06,685 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:58:15,612 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:15] "[32mPOST /reviews/delete_review/1 HTTP/1.1[0m" 302 -
+2025-01-28 06:58:15,735 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:15] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 06:58:15,896 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:58:18,033 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:18] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 06:58:18,229 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:58:24,740 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:24] "GET / HTTP/1.1" 200 -
+2025-01-28 06:58:24,934 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:58:52,629 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:52] "GET /reviews/add_review?station_id=2605 HTTP/1.1" 200 -
+2025-01-28 06:58:52,882 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:58:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:59:05,688 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:59:05] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-28 06:59:06,307 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:59:06] "GET / HTTP/1.1" 200 -
+2025-01-28 06:59:06,519 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:59:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 06:59:09,089 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:59:09] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 06:59:09,592 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 06:59:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:03:11,128 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:03:11] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-28 07:03:11,515 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:03:11] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 07:03:12,086 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:03:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:03:35,170 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:03:35] "[32mPOST /reviews/edit_review HTTP/1.1[0m" 302 -
+2025-01-28 07:03:35,294 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:03:35] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 07:03:35,605 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:03:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:06:03,183 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:06:03] "GET / HTTP/1.1" 200 -
+2025-01-28 07:06:03,613 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:06:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:07:55,960 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:07:55] "GET / HTTP/1.1" 200 -
+2025-01-28 07:07:56,990 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:07:56] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-28 07:08:09,972 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:09] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 07:08:12,404 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:12] "GET /map/station_info/15 HTTP/1.1" 200 -
+2025-01-28 07:08:20,284 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:20] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 07:08:25,227 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:25] "GET /reviews/add_review?station_id=15 HTTP/1.1" 200 -
+2025-01-28 07:08:25,407 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:08:35,739 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:35] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 07:08:36,127 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:08:39,539 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:39] "GET / HTTP/1.1" 200 -
+2025-01-28 07:08:39,747 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:08:43,926 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:43] "GET /reviews/add_review?station_id=15 HTTP/1.1" 200 -
+2025-01-28 07:08:44,107 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:08:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:14:01,633 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:01] "GET /reviews/add_review?station_id=15 HTTP/1.1" 200 -
+2025-01-28 07:14:02,050 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:14:19,314 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:19] "GET / HTTP/1.1" 200 -
+2025-01-28 07:14:19,599 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:14:33,082 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:33] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 07:14:35,928 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:35] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-28 07:14:38,291 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:38] "GET /reviews/add_review?station_id=86 HTTP/1.1" 200 -
+2025-01-28 07:14:38,696 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:14:42,081 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:42] "GET / HTTP/1.1" 200 -
+2025-01-28 07:14:42,379 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:14:52,280 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:52] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 07:14:52,659 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:14:55,941 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:55] "GET / HTTP/1.1" 200 -
+2025-01-28 07:14:56,212 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:14:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:25:26,896 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-28 07:25:26,998 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 07:25:41,359 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 07:25:41,361 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 07:27:51,012 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-28 07:27:51,107 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 07:28:06,881 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 07:28:06,881 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 07:28:19,369 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-28 07:28:19,492 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 07:28:34,695 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 07:28:34,695 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 07:29:22,274 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:22] "GET / HTTP/1.1" 200 -
+2025-01-28 07:29:22,801 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:29:30,816 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:30] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 07:29:31,220 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:29:34,588 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:34] "GET / HTTP/1.1" 200 -
+2025-01-28 07:29:34,840 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:29:39,717 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:39] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 07:29:41,905 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:41] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-28 07:29:44,741 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:44] "GET /reviews/add_review?station_id=86 HTTP/1.1" 200 -
+2025-01-28 07:29:45,138 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:29:52,714 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:52] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-28 07:29:53,464 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:53] "GET / HTTP/1.1" 200 -
+2025-01-28 07:29:53,610 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:29:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:30:06,136 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:06] "[33mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 07:30:14,792 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:14] "GET /reviews/add_review?station_id=1909 HTTP/1.1" 200 -
+2025-01-28 07:30:14,960 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:30:22,446 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:22] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-28 07:30:23,109 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:23] "GET / HTTP/1.1" 200 -
+2025-01-28 07:30:23,286 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:30:33,344 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:33] "[33mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 07:30:38,288 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:38] "GET /reviews/add_review?station_id=1909 HTTP/1.1" 200 -
+2025-01-28 07:30:38,520 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:30:48,907 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:48] "GET / HTTP/1.1" 200 -
+2025-01-28 07:30:49,149 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:30:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 07:31:00,126 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 07:31:00] "[33mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:01:41,414 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:01:41] "[33mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:01:57,666 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:01:57] "GET / HTTP/1.1" 200 -
+2025-01-28 08:01:58,119 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:01:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:02:05,819 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:02:05] "[33mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:02:16,705 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:02:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:03:11,544 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:03:11] "[33mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:04:03,256 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-28 08:04:03,359 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:04:18,795 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:04:18,805 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:07:37,751 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.164:5000
+2025-01-28 08:07:37,752 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 08:07:37,752 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:07:52,377 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:07:52,378 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:07:53,057 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:07:53] "GET / HTTP/1.1" 200 -
+2025-01-28 08:07:53,486 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:07:53] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-28 08:08:11,916 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:08:11] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 08:08:12,106 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:08:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:08:17,528 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:08:17] "GET / HTTP/1.1" 200 -
+2025-01-28 08:08:17,884 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:08:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:08:46,919 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:08:46] "[35m[1mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 500 -
+2025-01-28 08:09:21,765 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:09:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:12:03,787 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/value_objects/review.py', reloading
+2025-01-28 08:12:03,924 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:12:21,688 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:12:21,689 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:12:33,062 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:12:33] "GET / HTTP/1.1" 200 -
+2025-01-28 08:12:33,328 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:12:33] "GET /static/style.css HTTP/1.1" 200 -
+2025-01-28 08:12:47,961 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:12:47] "[35m[1mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 500 -
+2025-01-28 08:13:45,261 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/value_objects/review.py', reloading
+2025-01-28 08:13:45,361 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:13:59,888 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:13:59,888 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:14:12,305 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:14:12] "GET / HTTP/1.1" 200 -
+2025-01-28 08:14:12,959 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:14:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:14:24,261 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:14:24] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:15:04,720 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:04] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:15:11,930 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:11] "GET /map/station_info/1905 HTTP/1.1" 200 -
+2025-01-28 08:15:19,143 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:19] "GET / HTTP/1.1" 200 -
+2025-01-28 08:15:19,312 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:15:38,211 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:38] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:15:38,898 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:38] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:15:39,920 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:39] "GET /map/station_info/1905 HTTP/1.1" 200 -
+2025-01-28 08:15:43,486 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:43] "GET /map/station_info/1906 HTTP/1.1" 200 -
+2025-01-28 08:15:48,371 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:48] "GET /map/station_info/1907 HTTP/1.1" 200 -
+2025-01-28 08:15:53,779 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:53] "GET /map/station_info/1908 HTTP/1.1" 200 -
+2025-01-28 08:15:58,247 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:15:58] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:22:05,300 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:05] "GET /map/station_info/1905 HTTP/1.1" 200 -
+2025-01-28 08:22:11,931 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:11] "GET / HTTP/1.1" 200 -
+2025-01-28 08:22:12,296 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:22:25,901 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:25] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:22:48,253 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:48] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 08:22:48,636 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:22:51,489 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:22:51] "GET / HTTP/1.1" 200 -
+2025-01-28 08:23:03,650 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:03] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:23:06,002 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:06] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:23:06,096 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:06] "[33mGET /reviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:23:10,427 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:10] "GET /map/station_info/1908 HTTP/1.1" 200 -
+2025-01-28 08:23:10,541 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:10] "[33mGET /reviews/1908 HTTP/1.1[0m" 404 -
+2025-01-28 08:23:15,490 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:15] "GET /map/station_info/1907 HTTP/1.1" 200 -
+2025-01-28 08:23:15,593 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:15] "[33mGET /reviews/1907 HTTP/1.1[0m" 404 -
+2025-01-28 08:23:19,248 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:19] "GET /map/station_info/1906 HTTP/1.1" 200 -
+2025-01-28 08:23:19,373 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:19] "[33mGET /reviews/1906 HTTP/1.1[0m" 404 -
+2025-01-28 08:23:21,703 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:21] "GET /map/station_info/1905 HTTP/1.1" 200 -
+2025-01-28 08:23:21,810 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:21] "[33mGET /reviews/1905 HTTP/1.1[0m" 404 -
+2025-01-28 08:23:27,529 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:23:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:24:31,946 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:24:31] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:24:32,138 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:24:32] "[33mGET /reviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:24:34,937 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:24:34] "GET / HTTP/1.1" 200 -
+2025-01-28 08:24:35,322 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:24:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:24:42,780 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:24:42] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:24:56,693 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:24:56] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:25:02,619 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:02] "GET /reviews/add_review?station_id=1909 HTTP/1.1" 200 -
+2025-01-28 08:25:02,934 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:25:05,406 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:05] "GET / HTTP/1.1" 200 -
+2025-01-28 08:25:05,593 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:25:20,510 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:20] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:21,291 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:21] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:23,240 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:23] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:25,465 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:25] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:26,556 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:26] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:29,687 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:29] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:30,445 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:30] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:33,390 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:33] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:36,027 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:36] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:37,659 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:37] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:39,481 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:39] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:42,000 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:42] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:43,212 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:43] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:44,699 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:44] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:25:51,520 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:51] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:25:51,632 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:25:51] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:26:27,420 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:26:27] "GET /reviews/add_review?station_id=1909 HTTP/1.1" 200 -
+2025-01-28 08:26:27,671 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:26:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:26:36,480 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:26:36] "POST /reviews/add_review HTTP/1.1" 200 -
+2025-01-28 08:26:37,383 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:26:37] "GET / HTTP/1.1" 200 -
+2025-01-28 08:26:37,580 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:26:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:26:58,350 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:26:58] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:27:06,326 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:27:06] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:27:06,787 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:27:06] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:28:19,680 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/value_objects/review.py', reloading
+2025-01-28 08:28:19,801 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:28:34,888 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:28:34,889 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:29:17,617 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/value_objects/review.py', reloading
+2025-01-28 08:29:17,711 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:29:32,324 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:29:32,324 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:30:32,777 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:30:32] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 08:30:33,084 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:30:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:39:59,616 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/value_objects/review.py', reloading
+2025-01-28 08:39:59,813 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:40:22,099 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.164:5000
+2025-01-28 08:40:22,100 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 08:40:22,100 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:40:36,440 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:40:36,441 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:40:37,149 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:40:37] "GET / HTTP/1.1" 200 -
+2025-01-28 08:40:37,692 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:40:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:40:46,472 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:40:46] "[35m[1mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 500 -
+2025-01-28 08:42:21,271 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-28 08:42:21,410 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:42:35,708 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:42:35,709 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:42:36,365 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:42:36] "GET / HTTP/1.1" 200 -
+2025-01-28 08:42:36,841 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:42:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:42:50,208 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:42:50] "[35m[1mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 500 -
+2025-01-28 08:45:07,659 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.164:5000
+2025-01-28 08:45:07,659 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 08:45:07,660 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:45:22,034 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:45:22,034 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:46:32,131 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:46:32] "GET / HTTP/1.1" 200 -
+2025-01-28 08:46:32,663 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:46:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:47:22,789 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:47:22] "[35m[1mGET /reviews/get_StationReviews/1909 HTTP/1.1[0m" 500 -
+2025-01-28 08:47:32,725 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-28 08:47:32,910 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:47:48,903 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:47:48,904 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:48:07,972 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-28 08:48:08,064 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:48:42,633 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.164:5000
+2025-01-28 08:48:42,633 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 08:48:42,634 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:48:57,211 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:48:57,212 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:48:57,940 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:48:57] "GET / HTTP/1.1" 200 -
+2025-01-28 08:48:58,732 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:48:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:49:14,217 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:49:14] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:50:39,093 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/routes/reviews.py', reloading
+2025-01-28 08:50:39,200 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:50:54,100 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:50:54,101 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:52:34,839 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:52:34] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:52:35,430 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:52:35] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:52:40,765 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:52:40] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:52:41,103 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:52:41] "[33mGET /reviews/1909 HTTP/1.1[0m" 404 -
+2025-01-28 08:52:43,729 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:52:43] "GET / HTTP/1.1" 200 -
+2025-01-28 08:52:44,234 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:52:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:53:20,743 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:53:20] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:53:24,482 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:53:24] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:53:24,601 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:53:24] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:53:35,636 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:53:35] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 08:53:35,880 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:53:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:54:12,935 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:54:12] "GET / HTTP/1.1" 200 -
+2025-01-28 08:54:13,296 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:54:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:54:43,779 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:54:43] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:54:53,483 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:54:53] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:54:53,894 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:54:53] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:54:59,655 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:54:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:56:07,163 - werkzeug - INFO -  * Detected change in '/workspaces/se_project/app/domains/repositories/review_repository.py', reloading
+2025-01-28 08:56:07,266 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 08:56:22,509 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 08:56:22,509 - werkzeug - INFO -  * Debugger PIN: 278-878-256
+2025-01-28 08:56:22,930 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:22] "GET /map/station_info/1908 HTTP/1.1" 200 -
+2025-01-28 08:56:22,959 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:22] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:56:23,205 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:23] "GET /reviews/get_StationReviews/1908 HTTP/1.1" 200 -
+2025-01-28 08:56:23,980 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:23] "GET / HTTP/1.1" 200 -
+2025-01-28 08:56:23,981 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:23] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:56:24,673 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:56:35,179 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:35] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:56:36,425 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:36] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 08:56:40,450 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:40] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 08:56:40,560 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:56:40] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 08:57:29,833 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:57:29] "GET /reviews/add_review?station_id=1909 HTTP/1.1" 200 -
+2025-01-28 08:57:30,232 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:57:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 08:57:32,275 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:57:32] "GET /reviews/user_reviews HTTP/1.1" 200 -
+2025-01-28 08:57:32,518 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 08:57:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 09:00:32,734 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:00:32] "GET / HTTP/1.1" 200 -
+2025-01-28 09:00:33,350 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:00:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 09:02:44,729 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:02:44] "GET / HTTP/1.1" 200 -
+2025-01-28 09:02:45,229 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:02:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 09:03:14,750 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:03:14] "GET / HTTP/1.1" 200 -
+2025-01-28 09:03:15,456 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:03:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 09:03:23,304 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:03:23] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 09:13:55,179 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:13:55] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 09:14:12,707 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:14:12] "GET / HTTP/1.1" 200 -
+2025-01-28 09:14:13,517 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:14:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 09:14:26,804 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:14:26] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 09:15:11,942 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:11] "GET / HTTP/1.1" 200 -
+2025-01-28 09:15:12,185 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-01-28 09:15:35,221 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:35] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 09:15:37,271 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:37] "GET /map/station_info/86 HTTP/1.1" 200 -
+2025-01-28 09:15:37,538 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:37] "GET /reviews/get_StationReviews/86 HTTP/1.1" 200 -
+2025-01-28 09:15:50,525 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:50] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 09:15:51,403 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:15:51] "POST /search/charging_station HTTP/1.1" 200 -
+2025-01-28 09:16:02,455 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:16:02] "GET /map/station_info/1909 HTTP/1.1" 200 -
+2025-01-28 09:16:02,814 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:16:02] "GET /reviews/get_StationReviews/1909 HTTP/1.1" 200 -
+2025-01-28 09:16:45,984 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:16:45] "GET / HTTP/1.1" 200 -
+2025-01-28 09:16:46,492 - werkzeug - INFO - 127.0.0.1 - - [28/Jan/2025 09:16:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

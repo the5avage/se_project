@@ -36,6 +36,9 @@ function selectStation(stationId) {
 
                 // Scroll to the station info
                 document.getElementById('selected-station-info').scrollIntoView({ behavior: 'smooth' });
+
+                // Fetch and display reviews
+                fetchAndDisplayReviews(data.id);
             } else {
                 console.error('One or more elements not found');
             }
@@ -45,5 +48,48 @@ function selectStation(stationId) {
             alert('Failed to fetch station information.');
         });
 }
+
+// Function to fetch and display reviews
+function fetchAndDisplayReviews(stationId) {
+    fetch(`/reviews/get_StationReviews/${stationId}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Reviews:', data);
+            let totalRating = 0;
+            const reviewsList = document.getElementById('station-reviews');
+            reviewsList.innerHTML = '';  // Clear existing reviews
+            data.reviews.forEach(review => {
+                totalRating += review.rating;
+                const li = document.createElement('li');
+                li.textContent = `Username: ${review.username}, Rating: ${review.rating}, Comment: ${review.comment}`;
+                reviewsList.appendChild(li);
+            });
+            console.log('Total Rating:', totalRating);
+                document.getElementById('station-rating').innerText = 'Overall Rating: ' + (totalRating / data.reviews.length || 'N/A');
+           
+        })
+        .catch(error => console.error('Error fetching reviews:', error));
+}
+
+// Function to handle station selection from search results
+function onStationSelected(stationId, stationName, stationCompany, stationRating) {
+    document.getElementById('station-id').value = stationId;
+    document.getElementById('station-name').innerText = "Station Name: " + stationName;
+    document.getElementById('station-company').innerText = "Company: " + stationCompany;
+    document.getElementById('station-rating').innerText = "Overall Rating: " + (stationRating || 'N/A');
+    fetchAndDisplayReviews(stationId);
+}
+
+// Example usage: call onStationSelected with a station ID and other details
+// onStationSelected(1, 'Station Name', 'Company Name', 4.5);  // Replace with actual station details
+
+// Example function to handle search result click
+function handleSearchResultClick(stationId, stationName, stationCompany, stationRating) {
+    onStationSelected(stationId, stationName, stationCompany, stationRating);
+    document.getElementById('selected-station-info').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Example usage: call handleSearchResultClick with a station ID and other details
+// handleSearchResultClick(1, 'Station Name', 'Company Name', 4.5);  // Replace with actual station details
 </script>
 

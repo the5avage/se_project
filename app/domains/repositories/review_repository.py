@@ -19,13 +19,13 @@ class ReviewRepository(BaseRepository):
         Returns a list of Review objects.
         """
         query = '''
-            SELECT id, user_id, station_id, rating, comment
+            SELECT id, user_id, station_id, username, rating, comment
             FROM reviews
             WHERE station_id = ?
         '''
         results = self.fetchall(query, (station_id,))
         return [
-            Review(id=row[0], user_id=row[1], station_id=row[2], rating=row[3], comment=row[4])
+            Review(id=row[0], user_id=row[1], station_id=row[2],username=row[3], rating=row[4], comment=row[5])
             for row in results
         ]
 
